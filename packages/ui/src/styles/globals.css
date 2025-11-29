@@ -8,6 +8,7 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+  --font-size: 16px;
   --background: oklch(1 0 0);
   --foreground: oklch(0.145 0 0);
   --card: oklch(1 0 0);
@@ -124,4 +125,8 @@
   body {
     @apply bg-background text-foreground;
   }
+}
+
+html {
+  font-size: var(--font-size);
 }
