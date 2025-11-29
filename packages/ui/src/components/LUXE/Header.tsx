@@ -11,19 +11,31 @@ export function Header() {
             <a href="/" className="flex items-center space-x-2">
               <span className="text-2xl">LUXE</span>
             </a>
-            
+
             {/* Desktop Navigation */}
             <nav className="hidden md:flex items-center space-x-6">
-              <a href="#new" className="text-zinc-600 hover:text-zinc-900 transition-colors">
+              <a
+                href="#new"
+                className="text-zinc-600 hover:text-zinc-900 transition-colors"
+              >
                 New Arrivals
               </a>
-              <a href="#men" className="text-zinc-600 hover:text-zinc-900 transition-colors">
+              <a
+                href="#men"
+                className="text-zinc-600 hover:text-zinc-900 transition-colors"
+              >
                 Men
               </a>
-              <a href="#women" className="text-zinc-600 hover:text-zinc-900 transition-colors">
+              <a
+                href="#women"
+                className="text-zinc-600 hover:text-zinc-900 transition-colors"
+              >
                 Women
               </a>
-              <a href="#sale" className="text-zinc-600 hover:text-zinc-900 transition-colors">
+              <a
+                href="#sale"
+                className="text-zinc-600 hover:text-zinc-900 transition-colors"
+              >
                 Sale
               </a>
             </nav>
@@ -31,10 +43,18 @@ export function Header() {
 
           {/* Actions */}
           <div className="flex items-center gap-4">
-            <Button variant="ghost" size="icon" className="hidden sm:inline-flex">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="hidden sm:inline-flex"
+            >
               <Search className="h-5 w-5" />
             </Button>
-            <Button variant="ghost" size="icon" className="hidden sm:inline-flex">
+            <Button
+              variant="ghost"
+              size="icon"
+              className="hidden sm:inline-flex"
+            >
               <User className="h-5 w-5" />
             </Button>
             <Button variant="ghost" size="icon" className="relative">

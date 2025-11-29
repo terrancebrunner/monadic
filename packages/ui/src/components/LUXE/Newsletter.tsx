@@ -10,10 +10,11 @@ export function Newsletter() {
           <div className="inline-flex items-center justify-center h-16 w-16 rounded-full bg-white/10 mb-6">
             <Mail className="h-8 w-8" />
           </div>
-          
+
           <h2 className="text-3xl sm:text-4xl mb-4">Stay In The Loop</h2>
           <p className="text-xl text-zinc-300 mb-8">
-            Subscribe to our newsletter for exclusive offers, new arrivals, and style inspiration delivered to your inbox.
+            Subscribe to our newsletter for exclusive offers, new arrivals, and
+            style inspiration delivered to your inbox.
           </p>
 
           <form className="flex flex-col sm:flex-row gap-4 max-w-xl mx-auto">
@@ -22,7 +23,10 @@ export function Newsletter() {
               placeholder="Enter your email address"
               className="flex-1 bg-white border-white text-zinc-900 placeholder:text-zinc-500"
             />
-            <Button size="lg" className="bg-white text-zinc-900 hover:bg-zinc-100">
+            <Button
+              size="lg"
+              className="bg-white text-zinc-900 hover:bg-zinc-100"
+            >
               Subscribe
             </Button>
           </form>

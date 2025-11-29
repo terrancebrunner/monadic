@@ -20,7 +20,7 @@ import {
   TwitchIcon,
   TwitterIcon,
 } from "lucide-react";
-import Link from "next/link";
+/* import Link from "next/link"; */
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -143,17 +143,17 @@ const Login = () => {
           </Form>
 
           <div className="mt-5 space-y-5">
-            <Link
+            <a
               href="#"
               className="text-sm block underline text-muted-foreground text-center"
             >
               Forgot your password?
-            </Link>
+            </a>
             <p className="text-sm text-center">
               Don&apos;t have an account?
-              <Link href="#" className="ml-1 underline text-muted-foreground">
+              <a href="#" className="ml-1 underline text-muted-foreground">
                 Create account
-              </Link>
+              </a>
             </p>
           </div>
         </div>

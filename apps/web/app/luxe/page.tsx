@@ -6,7 +6,7 @@ import { Testimonials } from "@workspace/ui/components/LUXE/Testimonials";
 import { Newsletter } from "@workspace/ui/components/LUXE/Newsletter";
 import { Footer } from "@workspace/ui/components/LUXE/Footer";
 
-import "@workspace/ui/styles/luxe.css"
+import "@workspace/ui/styles/luxe.css";
 
 export default function Page() {
   return (

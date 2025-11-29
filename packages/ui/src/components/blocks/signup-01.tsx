@@ -13,7 +13,7 @@ import {
 import { Input } from "@workspace/ui/components/input";
 import { Separator } from "@workspace/ui/components/separator";
 import { zodResolver } from "@hookform/resolvers/zod";
-import Link from "next/link";
+/* import Link from "next/link"; */
 import { useForm } from "react-hook-form";
 import { z } from "zod";
 
@@ -152,9 +152,9 @@ const SignUp = () => {
 
           <p className="mt-5 text-sm text-center">
             Already have an account?
-            <Link href="#" className="ml-1 underline text-muted-foreground">
+            <a href="#" className="ml-1 underline text-muted-foreground">
               Log in
-            </Link>
+            </a>
           </p>
         </div>
       </div>

@@ -6,26 +6,32 @@ const testimonials = [
     id: 1,
     name: "Sarah Johnson",
     role: "Fashion Blogger",
-    content: "Absolutely love the quality and attention to detail. Every piece I've purchased has exceeded my expectations. The customer service is outstanding!",
+    content:
+      "Absolutely love the quality and attention to detail. Every piece I've purchased has exceeded my expectations. The customer service is outstanding!",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1753161023962-665967602405?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGN1c3RvbWVyJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzY0MjcwMjMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    image:
+      "https://images.unsplash.com/photo-1753161023962-665967602405?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGN1c3RvbWVyJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzY0MjcwMjMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
   },
   {
     id: 2,
     name: "Michael Chen",
     role: "Creative Director",
-    content: "The perfect blend of modern design and timeless elegance. I've recommended this store to all my friends and colleagues.",
+    content:
+      "The perfect blend of modern design and timeless elegance. I've recommended this store to all my friends and colleagues.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1753161023962-665967602405?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGN1c3RvbWVyJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzY0MjcwMjMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
+    image:
+      "https://images.unsplash.com/photo-1753161023962-665967602405?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGN1c3RvbWVyJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzY0MjcwMjMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
   },
   {
     id: 3,
     name: "Emma Williams",
     role: "Entrepreneur",
-    content: "Fast shipping, beautiful packaging, and products that look even better in person. This is now my go-to for all special occasions.",
+    content:
+      "Fast shipping, beautiful packaging, and products that look even better in person. This is now my go-to for all special occasions.",
     rating: 5,
-    image: "https://images.unsplash.com/photo-1753161023962-665967602405?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGN1c3RvbWVyJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzY0MjcwMjMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral"
-  }
+    image:
+      "https://images.unsplash.com/photo-1753161023962-665967602405?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxoYXBweSUyMGN1c3RvbWVyJTIwcG9ydHJhaXR8ZW58MXx8fHwxNzY0MjcwMjMxfDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
+  },
 ];
 
 export function Testimonials() {
@@ -36,7 +42,8 @@ export function Testimonials() {
         <div className="text-center mb-12">
           <h2 className="text-3xl sm:text-4xl mb-4">What Our Customers Say</h2>
           <p className="text-xl text-zinc-600 max-w-2xl mx-auto">
-            Join thousands of satisfied customers who trust us for quality and style
+            Join thousands of satisfied customers who trust us for quality and
+            style
           </p>
         </div>
 
@@ -48,7 +55,11 @@ export function Testimonials() {
                 {/* Rating */}
                 <div className="flex gap-1 mb-4">
                   {[...Array(testimonial.rating)].map((_, i) => (
-                    <svg key={i} className="h-5 w-5 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                    <svg
+                      key={i}
+                      className="h-5 w-5 text-yellow-400 fill-current"
+                      viewBox="0 0 20 20"
+                    >
                       <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                     </svg>
                   ))}

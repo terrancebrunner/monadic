@@ -3,7 +3,7 @@ import { Badge } from "@workspace/ui/components/badge";
 import { Button } from "@workspace/ui/components/button";
 import { cn } from "@workspace/ui/lib/utils";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
-import Link from "next/link";
+/* import Link from "next/link"; */
 
 export default function Hero() {
   return (
@@ -14,7 +14,7 @@ export default function Hero() {
         duration={3}
         className={cn(
           "mask-[radial-gradient(500px_circle_at_center,white,transparent)]",
-          "inset-x-0 h-full skew-y-12"
+          "inset-x-0 h-full skew-y-12",
         )}
       />
       <div className="relative z-10 text-center max-w-3xl">
@@ -23,9 +23,9 @@ export default function Hero() {
           className="rounded-full py-1 border-border"
           asChild
         >
-          <Link href="#">
+          <a href="#">
             Just released v1.0.0 <ArrowUpRight className="ml-1 size-4" />
-          </Link>
+          </a>
         </Badge>
         <h1 className="mt-6 text-4xl sm:text-5xl md:text-6xl lg:text-7xl md:leading-[1.2] font-semibold tracking-tighter">
           Customized Shadcn UI Blocks & Components

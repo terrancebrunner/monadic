@@ -5,26 +5,26 @@ const footerLinks = {
     { name: "New Arrivals", href: "#" },
     { name: "Best Sellers", href: "#" },
     { name: "Sale", href: "#" },
-    { name: "Gift Cards", href: "#" }
+    { name: "Gift Cards", href: "#" },
   ],
   company: [
     { name: "About Us", href: "#" },
     { name: "Careers", href: "#" },
     { name: "Press", href: "#" },
-    { name: "Sustainability", href: "#" }
+    { name: "Sustainability", href: "#" },
   ],
   support: [
     { name: "Contact Us", href: "#" },
     { name: "FAQs", href: "#" },
     { name: "Shipping & Returns", href: "#" },
-    { name: "Size Guide", href: "#" }
+    { name: "Size Guide", href: "#" },
   ],
   legal: [
     { name: "Privacy Policy", href: "#" },
     { name: "Terms of Service", href: "#" },
     { name: "Cookie Policy", href: "#" },
-    { name: "Accessibility", href: "#" }
-  ]
+    { name: "Accessibility", href: "#" },
+  ],
 };
 
 export function Footer() {
@@ -39,16 +39,28 @@ export function Footer() {
               Elevating everyday style with timeless elegance and modern design.
             </p>
             <div className="flex gap-4">
-              <a href="#" className="h-10 w-10 rounded-full bg-zinc-100 flex items-center justify-center hover:bg-zinc-200 transition-colors">
+              <a
+                href="#"
+                className="h-10 w-10 rounded-full bg-zinc-100 flex items-center justify-center hover:bg-zinc-200 transition-colors"
+              >
                 <Instagram className="h-5 w-5" />
               </a>
-              <a href="#" className="h-10 w-10 rounded-full bg-zinc-100 flex items-center justify-center hover:bg-zinc-200 transition-colors">
+              <a
+                href="#"
+                className="h-10 w-10 rounded-full bg-zinc-100 flex items-center justify-center hover:bg-zinc-200 transition-colors"
+              >
                 <Facebook className="h-5 w-5" />
               </a>
-              <a href="#" className="h-10 w-10 rounded-full bg-zinc-100 flex items-center justify-center hover:bg-zinc-200 transition-colors">
+              <a
+                href="#"
+                className="h-10 w-10 rounded-full bg-zinc-100 flex items-center justify-center hover:bg-zinc-200 transition-colors"
+              >
                 <Twitter className="h-5 w-5" />
               </a>
-              <a href="#" className="h-10 w-10 rounded-full bg-zinc-100 flex items-center justify-center hover:bg-zinc-200 transition-colors">
+              <a
+                href="#"
+                className="h-10 w-10 rounded-full bg-zinc-100 flex items-center justify-center hover:bg-zinc-200 transition-colors"
+              >
                 <Youtube className="h-5 w-5" />
               </a>
             </div>
@@ -60,7 +72,10 @@ export function Footer() {
             <ul className="space-y-3">
               {footerLinks.shop.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-zinc-600 hover:text-zinc-900 transition-colors">
+                  <a
+                    href={link.href}
+                    className="text-zinc-600 hover:text-zinc-900 transition-colors"
+                  >
                     {link.name}
                   </a>
                 </li>
@@ -73,7 +88,10 @@ export function Footer() {
             <ul className="space-y-3">
               {footerLinks.company.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-zinc-600 hover:text-zinc-900 transition-colors">
+                  <a
+                    href={link.href}
+                    className="text-zinc-600 hover:text-zinc-900 transition-colors"
+                  >
                     {link.name}
                   </a>
                 </li>
@@ -86,7 +104,10 @@ export function Footer() {
             <ul className="space-y-3">
               {footerLinks.support.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-zinc-600 hover:text-zinc-900 transition-colors">
+                  <a
+                    href={link.href}
+                    className="text-zinc-600 hover:text-zinc-900 transition-colors"
+                  >
                     {link.name}
                   </a>
                 </li>
@@ -99,7 +120,10 @@ export function Footer() {
             <ul className="space-y-3">
               {footerLinks.legal.map((link) => (
                 <li key={link.name}>
-                  <a href={link.href} className="text-zinc-600 hover:text-zinc-900 transition-colors">
+                  <a
+                    href={link.href}
+                    className="text-zinc-600 hover:text-zinc-900 transition-colors"
+                  >
                     {link.name}
                   </a>
                 </li>
@@ -111,14 +135,15 @@ export function Footer() {
         {/* Payment Methods */}
         <div className="border-t border-zinc-200 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
-            <p className="text-zinc-600">
-              © 2025 LUXE. All rights reserved.
-            </p>
+            <p className="text-zinc-600">© 2025 LUXE. All rights reserved.</p>
             <div className="flex items-center gap-4">
               <p className="text-zinc-600">We accept:</p>
               <div className="flex gap-2">
                 {["Visa", "Mastercard", "Amex", "PayPal"].map((method) => (
-                  <div key={method} className="h-8 px-3 rounded bg-zinc-100 flex items-center justify-center text-zinc-700">
+                  <div
+                    key={method}
+                    className="h-8 px-3 rounded bg-zinc-100 flex items-center justify-center text-zinc-700"
+                  >
                     {method}
                   </div>
                 ))}

@@ -1,6 +1,6 @@
 import { Button } from "@workspace/ui/components/button";
 import { ArrowRight } from "lucide-react";
-import Link from "next/link";
+ /* import Link from "next/link"; link-jk */
 
 const features = [
   {
@@ -66,9 +66,9 @@ const Features = () => {
                 </h4>
                 <p className="text-muted-foreground">{feature.details}</p>
                 <Button asChild size="lg" className="mt-6 rounded-full gap-3">
-                  <Link href={feature.tutorialLink}>
+                  <a href={feature.tutorialLink}> 
                     Learn More <ArrowRight />
-                  </Link>
+                  </a>
                 </Button>
               </div>
             </div>

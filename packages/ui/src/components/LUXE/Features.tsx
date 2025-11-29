@@ -4,23 +4,23 @@ const features = [
   {
     icon: Truck,
     title: "Free Shipping",
-    description: "Free shipping on all orders over $100"
+    description: "Free shipping on all orders over $100",
   },
   {
     icon: Shield,
     title: "Secure Payment",
-    description: "100% secure payment processing"
+    description: "100% secure payment processing",
   },
   {
     icon: HeadphonesIcon,
     title: "24/7 Support",
-    description: "Dedicated customer support team"
+    description: "Dedicated customer support team",
   },
   {
     icon: Package,
     title: "Easy Returns",
-    description: "30-day hassle-free returns"
-  }
+    description: "30-day hassle-free returns",
+  },
 ];
 
 export function Features() {

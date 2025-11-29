@@ -6,7 +6,7 @@ import {
   Users,
   Zap,
 } from "lucide-react";
-import Link from "next/link";
+/*  import Link from "next/link"; link-jk */
 
 const features = [
   {
@@ -77,7 +77,7 @@ const Features = () => {
         </p>
         <div className="mt-12 sm:mt-16 grid md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-y-8">
           {features.map((feature, index) => (
-            <Link key={index} href="#">
+            <a key={index} href="#">
               <div className="flex gap-6 items-center rounded-lg -mx-2 sm:mx-0 max-w-lg">
                 <div className="h-24 aspect-square shrink-0 rounded-lg bg-muted" />
                 <div className="">
@@ -89,7 +89,7 @@ const Features = () => {
                   </p>
                 </div>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
       </div>

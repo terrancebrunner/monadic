@@ -1,7 +1,7 @@
 import { Badge } from "@workspace/ui/components/badge";
 import { Button } from "@workspace/ui/components/button";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
-import Link from "next/link";
+/* import Link from "next/link"; */
 
 export default function Hero() {
   return (
@@ -13,9 +13,9 @@ export default function Hero() {
             className="rounded-full py-1 border-border"
             asChild
           >
-            <Link href="#">
+            <a href="#">
               Just released v1.0.0 <ArrowUpRight className="ml-1 size-4" />
-            </Link>
+            </a>
           </Badge>
           <h1 className="mt-6 max-w-[17ch] text-4xl md:text-5xl lg:text-[2.75rem] xl:text-[3.25rem] font-semibold leading-[1.2]! tracking-[-0.035em]">
             Customized Shadcn UI Blocks & Components

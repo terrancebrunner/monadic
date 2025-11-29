@@ -13,14 +13,17 @@ export function Hero() {
             <Badge variant="secondary" className="w-fit">
               New Collection 2025
             </Badge>
-            
+
             <div className="space-y-4">
               <h1 className="text-4xl sm:text-5xl lg:text-6xl">
                 Elevate Your Style
-                <span className="block text-zinc-600">With Timeless Elegance</span>
+                <span className="block text-zinc-600">
+                  With Timeless Elegance
+                </span>
               </h1>
               <p className="text-xl text-zinc-600 max-w-lg">
-                Discover curated collections that blend contemporary design with classic sophistication. Free shipping on orders over $100.
+                Discover curated collections that blend contemporary design with
+                classic sophistication. Free shipping on orders over $100.
               </p>
             </div>
 
@@ -37,20 +40,50 @@ export function Hero() {
             {/* Trust Indicators */}
             <div className="flex flex-wrap gap-6 pt-4">
               <div className="flex items-center gap-2 text-zinc-600">
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                <svg
+                  className="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
                 </svg>
                 <span>Free Shipping</span>
               </div>
               <div className="flex items-center gap-2 text-zinc-600">
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                <svg
+                  className="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
                 </svg>
                 <span>30-Day Returns</span>
               </div>
               <div className="flex items-center gap-2 text-zinc-600">
-                <svg className="h-5 w-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                <svg
+                  className="h-5 w-5"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    strokeWidth={2}
+                    d="M5 13l4 4L19 7"
+                  />
                 </svg>
                 <span>Secure Checkout</span>
               </div>
@@ -66,13 +99,16 @@ export function Hero() {
                 className="w-full h-full object-cover"
               />
             </div>
-            
+
             {/* Floating Card */}
             <div className="absolute bottom-8 left-8 bg-white rounded-lg shadow-xl p-4 max-w-[200px]">
               <div className="flex items-center gap-2 mb-2">
                 <div className="flex -space-x-2">
                   {[1, 2, 3].map((i) => (
-                    <div key={i} className="h-8 w-8 rounded-full bg-zinc-200 border-2 border-white" />
+                    <div
+                      key={i}
+                      className="h-8 w-8 rounded-full bg-zinc-200 border-2 border-white"
+                    />
                   ))}
                 </div>
                 <span className="text-zinc-600">+5k</span>
@@ -80,7 +116,11 @@ export function Hero() {
               <p className="text-sm">Happy Customers</p>
               <div className="flex gap-0.5 mt-1">
                 {[...Array(5)].map((_, i) => (
-                  <svg key={i} className="h-4 w-4 text-yellow-400 fill-current" viewBox="0 0 20 20">
+                  <svg
+                    key={i}
+                    className="h-4 w-4 text-yellow-400 fill-current"
+                    viewBox="0 0 20 20"
+                  >
                     <path d="M10 15l-5.878 3.09 1.123-6.545L.489 6.91l6.572-.955L10 0l2.939 5.955 6.572.955-4.756 4.635 1.123 6.545z" />
                   </svg>
                 ))}
