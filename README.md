@@ -1,6 +1,33 @@
-# shadcn/ui monorepo template
+# Monadic/UI monorepo template
 
-This template is for creating a monorepo with shadcn/ui.
+This template is for creating a monorepo with monadic/ui.
+
+## File Structure
+
+```
+apps
+└── web         # Your app goes here.
+    ├── app
+    │   └── page.tsx
+    ├── components
+    │   └── login-form.tsx
+    ├── components.json
+    └── package.json
+packages
+└── ui          # Your components and dependencies are installed here.
+    ├── src
+    │   ├── components
+    │   │   └── button.tsx
+    │   ├── hooks
+    │   ├── lib
+    │   │   └── utils.ts
+    │   └── styles
+    │       └── globals.css
+    ├── components.json
+    └── package.json
+package.json
+turbo.json
+```
 
 ## Usage
 

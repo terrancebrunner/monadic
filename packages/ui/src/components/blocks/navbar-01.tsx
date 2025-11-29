@@ -1,7 +1,8 @@
 import { Button } from "@workspace/ui/components/button";
-import { Logo } from "@workspace/ui/components/blocks/logo-02.js";
-import { NavMenu } from "@workspace/ui/components/blocks/nav/nav-menu.js";
-import { NavigationSheet } from "@workspace/ui/components/blocks/nav/navigation-sheet.js";
+import { Logo } from "@workspace/ui/components/blocks/logo-02";
+import { NavMenu } from "@workspace/ui/components/blocks/nav/nav-menu";
+import { NavigationSheet } from "@workspace/ui/components/blocks/nav/navigation-sheet";
+import { ModeToggle } from "@workspace/ui/components/utility/mode-toggle";
 
 const Navbar = () => {
   return (
@@ -17,6 +18,7 @@ const Navbar = () => {
             Sign In
           </Button>
           <Button>Get Started</Button>
+          <ModeToggle />
 
           {/* Mobile Menu */}
           <div className="md:hidden">

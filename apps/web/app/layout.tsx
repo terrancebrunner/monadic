@@ -1,12 +1,25 @@
 import "@workspace/ui/styles/globals.css"
+import { ThemeProvider } from "@/components/theme-provider"
 import { Providers } from "@/components/providers"
-
-export default function RootLayout({children,}: Readonly<{children: React.ReactNode}>) {
+ 
+export default function RootLayout({ children, }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
-      <body>
-        <Providers>{children}</Providers>
-      </body>
-    </html>
+    <>
+      <html lang="en" suppressHydrationWarning>
+        <head />
+        <body>
+          <Providers>
+          <ThemeProvider
+            attribute="class"
+            defaultTheme="system"
+            enableSystem
+            disableTransitionOnChange
+          >
+            {children}
+          </ThemeProvider>
+          </Providers>
+        </body>
+      </html>
+    </>
   )
 }

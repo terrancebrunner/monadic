@@ -3,6 +3,7 @@ import { Logo } from "@workspace/ui/components/blocks/logo-01";
 import { NavMenu } from "@workspace/ui/components/blocks/nav/nav-menu";
 import { NavigationSheet } from "@workspace/ui/components/blocks/nav/navigation-sheet";
 import { SunIcon } from "lucide-react";
+import { ModeToggle } from "@workspace/ui/components/utility/mode-toggle";
 
 const Navbar = () => {
   return (
@@ -20,9 +21,7 @@ const Navbar = () => {
             Sign In
           </Button>
           <Button>Sign Up</Button>
-          <Button size="icon" variant="outline">
-            <SunIcon />
-          </Button>
+          <ModeToggle />
 
           {/* Mobile Menu */}
           <div className="md:hidden">
