@@ -1,4 +1,4 @@
-import AnimatedGridPattern from "@workspace/ui/components/ui/animated-grid-pattern";
+import AnimatedGridPattern from "@workspace/ui/components/animated/animated-grid-pattern.js";
 import { Badge } from "@workspace/ui/components/badge";
 import { Button } from "@workspace/ui/components/button";
 import { cn } from "@workspace/ui/lib/utils";
