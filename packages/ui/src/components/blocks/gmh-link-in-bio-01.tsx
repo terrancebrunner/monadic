@@ -1,6 +1,8 @@
 "use client"
+
+import "@workspace/ui/components/icons/gmh_logo_dark.svg";
 import { useTheme } from "next-themes";
-import { ModeToggle } from "@workspace/ui/components/blocks/atoms/mode-toggle";
+import { ModeToggle } from "@workspace/ui/components/utility/mode-toggle";
 import { useState } from "react"
 import { Avatar, AvatarImage, AvatarFallback } from "@workspace/ui/components/avatar"
 import { Button } from "@workspace/ui/components/button"
@@ -52,11 +54,11 @@ export function LinkInBio() {
   const [isSharing, setIsSharing] = useState(false)
 
   const profile = {
-    name: "Monadic UI",
-    username: "@monadic-ui",
-    bio: "Design Systems for Public Figures",
-    tagline: "Wireframing to the letter ✨",
-    avatar: "https://symbolikon.com/wp-content/uploads/edd/2022/09/Monad-solid-.png",
+    name: "GMH Lab",
+    username: "@gmhlab",
+    bio: "Center for Global Mental Health",
+    tagline: "Supporting Wellbeing Worldwide 🥼✨",
+    avatar: GmhLogoDark,
     verified: true
   }
 
@@ -148,17 +150,11 @@ export function LinkInBio() {
           <div className="mb-8 flex flex-col items-center text-center">
             <Avatar className="mb-4 h-24 w-24 ring-4 ring-white dark:ring-slate-800">
               <AvatarImage src={profile.avatar} alt={profile.name} />
-              <AvatarFallback>AM</AvatarFallback>
+              <AvatarFallback>BK</AvatarFallback>
             </Avatar>
             
             <div className="mb-2 flex items-center gap-2">
               <h1 className="text-slate-900 dark:text-slate-50">{profile.name}</h1>
-              {profile.verified && (
-                <Badge variant="default" className="gap-1">
-                  <Heart className="h-3 w-3 fill-current" />
-                  Verified
-                </Badge>
-              )}
             </div>
             
             <p className="mb-2 text-slate-600 dark:text-slate-400">{profile.username}</p>
@@ -265,7 +261,7 @@ export function LinkInBio() {
           {/* Footer */}
           <div className="mt-12 text-center">
             <p className="text-slate-500 dark:text-slate-400">
-              Made with ❤️ using shadcn/ui
+              2025© shipped by KALEIDOSCOPE of BUTTERFLIES
             </p>
           </div>
         </div>

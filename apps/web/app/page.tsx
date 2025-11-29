@@ -1,5 +1,5 @@
-import { LinkInBio } from "@workspace/ui/components/blocks/link-in-bio-01"
+import { LinkInBio } from "@workspace/ui/components/blocks/gmh-link-in-bio-01"
 
-export default function App() {
+export default function Page() {
   return <LinkInBio />
 }

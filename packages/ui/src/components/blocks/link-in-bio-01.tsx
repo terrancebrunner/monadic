@@ -1,6 +1,6 @@
 "use client"
 import { useTheme } from "next-themes";
-import { ModeToggle } from "@workspace/ui/components/blocks/atoms/mode-toggle";
+import { ModeToggle } from "@workspace/ui/components/utility/mode-toggle";
 import { useState } from "react"
 import { Avatar, AvatarImage, AvatarFallback } from "@workspace/ui/components/avatar"
 import { Button } from "@workspace/ui/components/button"

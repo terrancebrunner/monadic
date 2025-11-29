@@ -1,5 +1,5 @@
 import { Geist, Geist_Mono } from "next/font/google";
-import { ThemeProvider } from "@workspace/ui/components/blocks/nav/theme-provider";
+import { ThemeProvider } from "@/components/theme-provider";
 
 import "@workspace/ui/styles/globals.css";
 import { Providers } from "@/components/providers";
