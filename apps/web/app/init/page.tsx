@@ -3,7 +3,6 @@ import { FancyButton } from "@workspace/ui/components/extended/fancy-button";
 
 export default function Page() {
   return (
-    <div className="flex items-center justify-center min-h-svh">
       <div className="flex flex-col items-center justify-center gap-4">
         <h1 className="text-2xl font-bold">Hello World</h1>
         <div className="flex flex-wrap items-center rounded-lg p-3 border gap-2">
@@ -17,6 +16,5 @@ export default function Page() {
           <FancyButton>Button</FancyButton>
         </div>
       </div>
-    </div>
   );
 }

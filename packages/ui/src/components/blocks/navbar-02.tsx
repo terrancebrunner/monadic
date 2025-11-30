@@ -1,9 +1,9 @@
-import { Button } from "@workspace/ui/components/ui/button.js";
-import { Logo } from "@workspace/ui/components/shared/logo-01.js";
+import { Button } from "@workspace/ui/components/ui/button";
+import { Logo } from "@workspace/ui/components/shared/logo-01";
 import { NavMenu } from "@workspace/ui/components/atoms/nav-menu";
 import { NavigationSheet } from "@workspace/ui/components/atoms/navigation-sheet";
 import { SunIcon } from "lucide-react";
-import { ModeToggle } from "@workspace/ui/components/shared/mode-toggle.js";
+import { ModeToggle } from "@workspace/ui/components/shared/mode-toggle";
 
 const Navbar = () => {
   return (

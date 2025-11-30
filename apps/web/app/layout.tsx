@@ -1,6 +1,7 @@
 import "@workspace/ui/styles/globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Providers } from "@/components/providers";
+import Navbar from "@workspace/ui/components/blocks/navbar-02";
 
 export default function RootLayout({
   children,
@@ -9,7 +10,7 @@ export default function RootLayout({
     <>
       <html lang="en" suppressHydrationWarning>
         <head />
-        <body>
+        <body className="">
           <Providers>
             <ThemeProvider
               attribute="class"
@@ -17,6 +18,7 @@ export default function RootLayout({
               enableSystem
               disableTransitionOnChange
             >
+            <Navbar />
               {children}
             </ThemeProvider>
           </Providers>

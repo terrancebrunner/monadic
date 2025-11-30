@@ -243,7 +243,7 @@ export function LinkInBio() {
           {/* Footer */}
           <div className="mt-12 text-center">
             <p className="text-slate-500 dark:text-slate-400">
-              2025© shipped by KALEIDOSCOPE of BUTTERFLIES
+              2025© Supporting Wellbeing Worldwide.
             </p>
           </div>
         </div>

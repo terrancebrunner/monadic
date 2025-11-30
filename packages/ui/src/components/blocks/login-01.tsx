@@ -1,19 +1,19 @@
 import { cn } from "@workspace/ui/lib/utils";
-import { Button } from "@workspace/ui/components/ui/button.js";
+import { Button } from "@workspace/ui/components/ui/button";
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "@workspace/ui/components/ui/card.js";
+} from "@workspace/ui/components/ui/card";
 import {
   Field,
   FieldDescription,
   FieldGroup,
   FieldLabel,
-} from "@workspace/ui/components/ui/field.js";
-import { Input } from "@workspace/ui/components/ui/input.js";
+} from "@workspace/ui/components/ui/field";
+import { Input } from "@workspace/ui/components/ui/input";
 
 export function LoginForm({
   className,

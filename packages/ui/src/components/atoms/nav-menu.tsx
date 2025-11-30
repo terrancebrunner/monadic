@@ -4,7 +4,7 @@ import {
   NavigationMenuLink,
   NavigationMenuList,
   navigationMenuTriggerStyle,
-} from "@workspace/ui/components/ui/navigation-menu.js";
+} from "@workspace/ui/components/ui/navigation-menu";
 /* import Link from "next/link"; */
 import { ComponentProps } from "react";
 
