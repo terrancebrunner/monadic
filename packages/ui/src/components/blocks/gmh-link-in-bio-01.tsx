@@ -1,5 +1,6 @@
 "use client"
 
+import DarkLightAvatar from "@workspace/ui/components/blocks/logo-03" ;
 import { useTheme } from "next-themes";
 import { ModeToggle } from "@workspace/ui/components/utility/mode-toggle";
 import { useState } from "react"
@@ -55,24 +56,23 @@ export function LinkInBio() {
   const profile = {
     name: "GMH Lab",
     username: "@gmhlab",
-    bio: "Center for Global Mental Health",
-    tagline: "Supporting Wellbeing Worldwide 🥼✨",
-    avatar: "/gmh_logo_dark.svg",
+    bio: "The GW Center for Global Mental Health",
+    tagline: '"Supporting wellbeing worldwide."'
   }
 
   const socialLinks: SocialLink[] = [
-    { platform: "Instagram", url: "#", icon: <Instagram className="h-5 w-5" />, color: "hover:text-pink-500" },
-    { platform: "Twitter", url: "#", icon: <Twitter className="h-5 w-5" />, color: "hover:text-blue-400" },
-    { platform: "YouTube", url: "#", icon: <Youtube className="h-5 w-5" />, color: "hover:text-red-500" },
-    { platform: "LinkedIn", url: "#", icon: <Linkedin className="h-5 w-5" />, color: "hover:text-blue-600" },
-    { platform: "GitHub", url: "#", icon: <Github className="h-5 w-5" />, color: "hover:text-slate-700" },
+    { platform: "Instagram", url: "", icon: <Instagram className="h-5 w-5" />, color: "hover:text-pink-500" },
+    { platform: "Twitter", url: "", icon: <Twitter className="h-5 w-5" />, color: "hover:text-blue-400" },
+    { platform: "YouTube", url: "", icon: <Youtube className="h-5 w-5" />, color: "hover:text-red-500" },
+    { platform: "LinkedIn", url: "", icon: <Linkedin className="h-5 w-5" />, color: "hover:text-blue-600" },
+    { platform: "GitHub", url: "", icon: <Github className="h-5 w-5" />, color: "hover:text-slate-700" },
   ]
 
   const links: LinkItem[] = [
     {
       id: "1",
       title: "Website",
-      description: "Our work at the GW School of Medicine and Health Sciences",
+      description: "Our work at The GW School of Medicine and Health Sciences",
       url: "#",
       icon: <Globe className="h-5 w-5" />,
       badge: "Featured",
@@ -81,7 +81,7 @@ export function LinkInBio() {
     {
       id: "2",
       title: "Online Store",
-      description: "Shop 'GMH Master Series', exclusive merch, and digital products",
+      description: "Shop 'GMH Compendium', exclusive merch, and digital products",
       url: "#",
       icon: <ShoppingBag className="h-5 w-5" />,
       badge: "New",
@@ -90,15 +90,15 @@ export function LinkInBio() {
     {
       id: "3",
       title: "Latest News",
-      description: "10 Tips for Clarivate accreditation",
+      description: '"10 Tips for Clarivate accreditation" by Dr. Brandon Kohrt MD, PhD"',
       url: "#",
       icon: <BookOpen className="h-5 w-5" />,
       clicks: 432
     },
     {
       id: "4",
-      title: "Hire You",
-      description: "Events and trainings",
+      title: "Hire You!",
+      description: "Volunteer and professional trainings",
       url: "#",
       icon: <Briefcase className="h-5 w-5" />,
       clicks: 678
@@ -106,7 +106,7 @@ export function LinkInBio() {
     {
       id: "5",
       title: "Newsletter",
-      description: "Weekly insights on global menta health",
+      description: "Global mental health events and industry insights",
       url: "#",
       icon: <Mail className="h-5 w-5" />,
       badge: "Popular",
@@ -126,37 +126,25 @@ export function LinkInBio() {
   }
 
   return (
-    <div className={`min-h-screen transition-colors ${isDark ? "dark" : ""}`}>
+    <div className={`min-h-screen transition-colors ${isDark ? "dark" : "light"}`}>
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-200 dark:from-[#064e75ff] dark:to-[#033c5aff]">
-        <div className="mx-auto max-w-2xl px-4 py-12">
+        <div className="mx-auto bg-black/10 dark:bg-white/10 max-w-2xl px-4 pt-4 pb-12">
           {/* Theme Toggle */}
-          <div className="mb-8 flex justify-end">
+          <div className="mb-4 flex justify-end">
             <div className="flex items-center gap-2">
-              <Label htmlFor="theme-toggle" className="cursor-pointer">
-                {isDark ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
-              </Label>
-              <Switch
-                id="theme-toggle"
-                checked={isDark}
-                onCheckedChange={setIsDark}
-              /> 
               <ModeToggle />
             </div>
           </div>
 
           {/* Profile Section */}
-          <div className="mb-8 flex flex-col items-center text-center">
-            <Avatar className="mb-4 h-24 w-24 bg-card ring-4 ring-white dark:ring-slate-800 p-2">
-              <AvatarImage src={profile.avatar} alt={profile.name} />
-              <AvatarFallback>BK</AvatarFallback>
-            </Avatar>
-            
-            <div className="mb-2 flex items-center gap-2">
-              <h1 className="text-slate-900 dark:text-slate-50">{profile.name}</h1>
+          <div className="mb-6 flex flex-col items-center text-center">
+            <DarkLightAvatar className="mb-1" />
+          
+            <div className="mb-3 flex items-center gap-2">
+              <h1 className="text-5xl text-foreground text-slate-900 dark:text-slate-50">{profile.name}</h1>
             </div>
             
-            <p className="mb-2 text-slate-600 dark:text-slate-400">{profile.username}</p>
-            <p className="mb-1 text-slate-900 dark:text-slate-50">{profile.bio}</p>
+            <p className="mb-2 text-xl text-slate-900 dark:text-slate-50">{profile.bio}</p>
             <p className="text-slate-600 dark:text-slate-400">{profile.tagline}</p>
           </div>
 
@@ -190,9 +178,9 @@ export function LinkInBio() {
             <CardHeader>
               <CardTitle className="flex items-center gap-2">
                 <TrendingUp className="h-5 w-5" />
-                Profile Analytics
+                Analytics
               </CardTitle>
-              <CardDescription>Your link performance overview</CardDescription>
+              <CardDescription>Link performance overview</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-3 gap-4">

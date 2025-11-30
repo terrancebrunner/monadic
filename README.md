@@ -71,3 +71,14 @@ import { Button } from "@workspace/ui/components/button";
     - app/web
     - packages/ui
     - root 
+- /lib the new home for CMS
+``` ts
+// lib/profile.ts
+
+export const profile = {
+name: "GMH Lab",
+username: "@gmhlab",
+bio: "Center for Global Mental Health",
+tagline: "Supporting Wellbeing Worldwide 🥼✨",
+```
+};
