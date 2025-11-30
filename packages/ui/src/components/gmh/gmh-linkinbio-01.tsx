@@ -68,7 +68,7 @@ export function LinkInBio() {
     {
       id: "1",
       title: "Website",
-      description: "Our work at The GW School of Medicine and Health Sciences",
+      description: "Our center at The GW School of Medicine and Health Sciences",
       url: "/login",
       icon: <Globe className="h-5 w-5" />,
       badge: "Featured",
