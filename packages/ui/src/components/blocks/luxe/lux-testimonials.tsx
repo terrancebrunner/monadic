@@ -1,5 +1,5 @@
-import { Card, CardContent } from "@workspace/ui/components/card";
-import { ImageWithFallback } from "@workspace/ui/components/figma/ImageWithFallback";
+import { Card, CardContent } from "@workspace/ui/components/ui/card";
+import { ImageWithFallback } from "@workspace/ui/components/shared/image-with-fallback";
 
 const testimonials = [
   {

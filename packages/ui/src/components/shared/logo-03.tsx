@@ -1,6 +1,6 @@
 "use client";
 
-import { Avatar, AvatarImage, AvatarFallback } from "@workspace/ui/components/avatar";
+import { Avatar, AvatarImage, AvatarFallback } from "@workspace/ui/components/ui/avatar";
 import { useTheme } from "next-themes";
 
 interface DarkLightAvatarProps {
@@ -16,7 +16,7 @@ const DarkLightAvatar: React.FC<DarkLightAvatarProps> = ({ className }) => {
   return (
     <Avatar className={`h-40 w-40 p-2 ${className}`}>
       <AvatarImage src={avatarSrc} alt="GMH Logo" className="mt-1" />
-      <AvatarFallback>BK</AvatarFallback>
+      <AvatarFallback>Kohrt,MD</AvatarFallback>
     </Avatar>
   );
 };

@@ -1,7 +1,7 @@
 "use client";
 
-import { Logo } from "@workspace/ui/components/blocks/logo-01";
-import { Button } from "@workspace/ui/components/button";
+import { Logo } from "@workspace/ui/components/shared/logo-01.js";
+import { Button } from "@workspace/ui/components/ui/button.js";
 import {
   Form,
   FormControl,
@@ -9,9 +9,9 @@ import {
   FormItem,
   FormLabel,
   FormMessage,
-} from "@workspace/ui/components/form";
-import { Input } from "@workspace/ui/components/input";
-import { Separator } from "@workspace/ui/components/separator";
+} from "@workspace/ui/components/ui/form.js";
+import { Input } from "@workspace/ui/components/ui/input.js";
+import { Separator } from "@workspace/ui/components/ui/separator.js";
 import { zodResolver } from "@hookform/resolvers/zod";
 /* import Link from "next/link"; */
 import { useForm } from "react-hook-form";

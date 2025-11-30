@@ -1,5 +1,5 @@
 import { ShoppingCart, Menu, Search, User } from "lucide-react";
-import { Button } from "@workspace/ui/components/button";
+import { Button } from "@workspace/ui/components/ui/button";
 
 export function Header() {
   return (

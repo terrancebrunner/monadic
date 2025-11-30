@@ -1,7 +1,7 @@
-import { Button } from "@workspace/ui/components/button";
-import { Badge } from "@workspace/ui/components/badge";
+import { Button } from "@workspace/ui/components/ui/button";
+import { Badge } from "@workspace/ui/components/ui/badge";
 import { ArrowRight } from "lucide-react";
-import { ImageWithFallback } from "@workspace/ui/components/figma/ImageWithFallback";
+import { ImageWithFallback } from "@workspace/ui/components/shared/image-with-fallback";
 
 export function Hero() {
   return (

@@ -1,13 +1,13 @@
-import { Button } from "@workspace/ui/components/button";
+import { Button } from "@workspace/ui/components/ui/button.js";
 import {
   Sheet,
   SheetContent,
   SheetTitle,
   SheetTrigger,
-} from "@workspace/ui/components/sheet";
+} from "@workspace/ui/components/ui/sheet.js";
 import { Menu } from "lucide-react";
-import { Logo } from "@workspace/ui/components/blocks/logo-02";
-import { NavMenu } from "@workspace/ui/components/blocks/nav/nav-menu";
+import { Logo } from "@workspace/ui/components/shared/logo-02.js";
+import { NavMenu } from "@workspace/ui/components/blocks/atoms/nav-menu";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 
 export const NavigationSheet = () => {

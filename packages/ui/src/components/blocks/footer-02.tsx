@@ -1,4 +1,4 @@
-import { Separator } from "@workspace/ui/components/separator";
+import { Separator } from "@workspace/ui/components/ui/separator.js";
 import {
   DribbbleIcon,
   GithubIcon,

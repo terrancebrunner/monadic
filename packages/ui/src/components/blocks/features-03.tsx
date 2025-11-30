@@ -1,4 +1,4 @@
-import { Button } from "@workspace/ui/components/button";
+import { Button } from "@workspace/ui/components/ui/button.js";
 import { ArrowRight, Blocks, Settings2 } from "lucide-react";
 
 const Features = () => {

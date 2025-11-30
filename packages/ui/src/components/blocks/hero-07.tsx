@@ -1,6 +1,6 @@
-import AnimatedGridPattern from "@workspace/ui/components/animated/animated-grid-pattern.js";
-import { Badge } from "@workspace/ui/components/badge";
-import { Button } from "@workspace/ui/components/button";
+import AnimatedGridPattern from "@workspace/ui/components/animated/animated-grid-pattern";
+import { Badge } from "@workspace/ui/components/ui/badge.js";
+import { Button } from "@workspace/ui/components/ui/button.js";
 import { cn } from "@workspace/ui/lib/utils";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
 /* import Link from "next/link"; */
