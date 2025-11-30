@@ -58,7 +58,6 @@ export function LinkInBio() {
     bio: "Center for Global Mental Health",
     tagline: "Supporting Wellbeing Worldwide 🥼✨",
     avatar: "/gmh_logo_dark.svg",
-    verified: true
   }
 
   const socialLinks: SocialLink[] = [
@@ -72,8 +71,8 @@ export function LinkInBio() {
   const links: LinkItem[] = [
     {
       id: "1",
-      title: "Portfolio Website",
-      description: "Check out my latest work and projects",
+      title: "Website",
+      description: "Our work at the GW School of Medicine and Health Sciences",
       url: "#",
       icon: <Globe className="h-5 w-5" />,
       badge: "Featured",
@@ -82,7 +81,7 @@ export function LinkInBio() {
     {
       id: "2",
       title: "Online Store",
-      description: "Shop exclusive merch and digital products",
+      description: "Shop 'GMH Master Series', exclusive merch, and digital products",
       url: "#",
       icon: <ShoppingBag className="h-5 w-5" />,
       badge: "New",
@@ -90,16 +89,16 @@ export function LinkInBio() {
     },
     {
       id: "3",
-      title: "Latest Blog Post",
-      description: "10 Tips for Better Design in 2024",
+      title: "Latest News",
+      description: "10 Tips for Clarivate accreditation",
       url: "#",
       icon: <BookOpen className="h-5 w-5" />,
       clicks: 432
     },
     {
       id: "4",
-      title: "Hire Me",
-      description: "Available for freelance projects",
+      title: "Hire You",
+      description: "Events and trainings",
       url: "#",
       icon: <Briefcase className="h-5 w-5" />,
       clicks: 678
@@ -107,7 +106,7 @@ export function LinkInBio() {
     {
       id: "5",
       title: "Newsletter",
-      description: "Weekly insights on design and development",
+      description: "Weekly insights on global menta health",
       url: "#",
       icon: <Mail className="h-5 w-5" />,
       badge: "Popular",
@@ -147,7 +146,7 @@ export function LinkInBio() {
 
           {/* Profile Section */}
           <div className="mb-8 flex flex-col items-center text-center">
-            <Avatar className="mb-4 h-24 w-24 ring-4 ring-white dark:ring-slate-800 p-2">
+            <Avatar className="mb-4 h-24 w-24 bg-card ring-4 ring-white dark:ring-slate-800 p-2">
               <AvatarImage src={profile.avatar} alt={profile.name} />
               <AvatarFallback>BK</AvatarFallback>
             </Avatar>
