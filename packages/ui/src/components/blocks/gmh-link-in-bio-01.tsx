@@ -147,7 +147,7 @@ export function LinkInBio() {
 
           {/* Profile Section */}
           <div className="mb-8 flex flex-col items-center text-center">
-            <Avatar className="mb-4 h-24 w-24 ring-4 ring-white dark:ring-slate-800">
+            <Avatar className="mb-4 h-24 w-24 ring-4 ring-white dark:ring-slate-800 p-2">
               <AvatarImage src={profile.avatar} alt={profile.name} />
               <AvatarFallback>BK</AvatarFallback>
             </Avatar>
