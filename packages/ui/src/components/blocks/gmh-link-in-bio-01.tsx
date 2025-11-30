@@ -1,6 +1,5 @@
 "use client"
 
-import GmhLogoDark from "ui/components/icons/gmh_logo_dark.svg";
 import { useTheme } from "next-themes";
 import { ModeToggle } from "@workspace/ui/components/utility/mode-toggle";
 import { useState } from "react"
@@ -58,7 +57,7 @@ export function LinkInBio() {
     username: "@gmhlab",
     bio: "Center for Global Mental Health",
     tagline: "Supporting Wellbeing Worldwide 🥼✨",
-    avatar: GmhLogoDark,
+    avatar: "/gmh_logo_dark.svg",
     verified: true
   }
 
