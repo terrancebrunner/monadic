@@ -1,6 +1,6 @@
 "use client"
 
-import "@workspace/ui/components/icons/gmh_logo_dark.svg";
+import GmhLogoDark from "ui/components/icons/gmh_logo_dark.svg";
 import { useTheme } from "next-themes";
 import { ModeToggle } from "@workspace/ui/components/utility/mode-toggle";
 import { useState } from "react"
