@@ -1,12 +1,12 @@
-# Monadic/UI monorepo template
+# 'Monadic-UI' Monorepository
 
-This template is for creating a monorepo with monadic/ui.
+This is a monorepo with monadic-ui.
 
 ## File Structure
 
 ```
-apps
-└── web         # Your app goes here.
+apps            # apps goes here.
+└── web         # app goes here.
     ├── app
     │   └── page.tsx
     ├── components
@@ -14,7 +14,7 @@ apps
     ├── components.json
     └── package.json
 packages
-└── ui          # Your components and dependencies are installed here.
+└── ui          # components and dependencies installed here.
     ├── src
     │   ├── components
     │   │   └── button.tsx
@@ -25,19 +25,24 @@ packages
     │       └── globals.css
     ├── components.json
     └── package.json
+public          # single source of truth for assets
+└── *.svg
+scripts         # custom scripts  
+└── copy-public.js 
 package.json
 turbo.json
 ```
+## /scripts
 
-## Usage
+```copy-public.js``` copies contents of root /public into apps/web/public using:
 
-```bash
-pnpm dlx shadcn@latest init
+```
+node scripts/copy-public.js 
 ```
 
-## Adding components
+## adding components
 
-To add components to your app, run the following command at the root of your `web` app:
+To add components to apps/web, run the following command at the root of `web` app:
 
 ```bash
 pnpm dlx shadcn@latest add button -c apps/web
@@ -47,12 +52,22 @@ This will place the ui components in the `packages/ui/src/components` directory.
 
 ## Tailwind
 
-Your `tailwind.config.ts` and `globals.css` are already set up to use the components from the `ui` package.
+`tailwind.config.ts` and `globals.css` are already set up to use the components from the `ui` package.
 
-## Using components
+## using components
 
 To use the components in your app, import them from the `ui` package.
 
 ```tsx
 import { Button } from "@workspace/ui/components/button";
 ```
+
+---
+
+### Notes: 
+- Barrel components
+- Block wrapper component for display
+- three package.jsons:
+    - app/web
+    - packages/ui
+    - root 
