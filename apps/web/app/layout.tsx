@@ -1,6 +1,6 @@
 import "@workspace/ui/styles/globals.css";
-import { ThemeProvider } from "@/components/theme-provider";
-import { Providers } from "@/components/providers";
+import { ThemeProvider } from "@workspace/ui/components/shared/theme-provider";
+import { Providers } from "@workspace/ui/components/shared/providers";
 import Navbar from "@workspace/ui/components/gmh/gmh-navbar-02";
 
 export default function RootLayout({
@@ -11,7 +11,6 @@ export default function RootLayout({
       <html lang="en" suppressHydrationWarning>
         <head />
         <body className="">
-          <Providers>
             <ThemeProvider
               attribute="class"
               defaultTheme="system"
@@ -21,7 +20,6 @@ export default function RootLayout({
             <Navbar />
               {children}
             </ThemeProvider>
-          </Providers>
         </body>
       </html>
     </>
