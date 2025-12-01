@@ -1,6 +1,6 @@
 "use client"
 
-import DarkLightAvatar from "@workspace/ui/components/shared/logo-03" ;
+import DarkLightAvatar from "@workspace/ui/components/shared/dark-light-avatar" ;
 import { ModeToggle } from "@workspace/ui/components/shared/mode-toggle";
 import { useState } from "react"
 import { Button } from "@workspace/ui/components/ui/button"

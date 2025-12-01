@@ -1,11 +1,15 @@
+"use client";
+
+import "@workspace/ui/styles/linkinbio.css"
+import DarkLightAvatar from "@workspace/ui/components/shared/dark-light-avatar"
+
 import { useState } from "react"
-import { Avatar, AvatarImage, AvatarFallback } from "@workspace/ui/components/ui/avatar.js"
-import { Button } from "@workspace/ui/components/ui/button.js"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from"@workspace/ui/components/ui/card.js"
-import { Badge } from "@workspace/ui/components/ui/badge.js"
-import { Separator } from "@workspace/ui/components/ui/separator.js"
-import { Switch } from "@workspace/ui/components/ui/switch.js"
-import { Label } from "@workspace/ui/components/ui/label.js"
+import { Button } from "@workspace/ui/components/ui/button"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@workspace/ui/components/ui/card"
+import { Badge } from "@workspace/ui/components/ui/badge"
+import { Separator } from "@workspace/ui/components/ui/separator"
+import { Switch } from "@workspace/ui/components/ui/switch"
+import { Label } from "@workspace/ui/components/ui/label"
 import { 
   Instagram, 
   Twitter, 
@@ -25,6 +29,7 @@ import {
   Eye,
   MousePointerClick
 } from "lucide-react"
+import { Fallback } from "@radix-ui/react-avatar";
 
 interface LinkItem {
   id: string
@@ -48,11 +53,15 @@ export function LinkInBio() {
   const [isSharing, setIsSharing] = useState(false)
 
   const profile = {
-    name: "Alex Morgan",
-    username: "@alexmorgan",
+    name: "K.O. Butterflies",
+    username: "@KOButterflies",
     bio: "Digital Creator • Designer • Developer",
     tagline: "Building beautiful things on the internet ✨",
-    avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=400&h=400&fit=crop",
+    avatar: {
+      dark: "/monadic_logo_dark.svg",
+      light: "/monadic_logo_light.svg",
+      fallback: "Kohrt, MD"
+    },
     verified: true
   }
 
@@ -141,10 +150,13 @@ export function LinkInBio() {
 
           {/* Profile Section */}
           <div className="mb-8 flex flex-col items-center text-center">
-            <Avatar className="mb-4 h-24 w-24 ring-4 ring-white dark:ring-slate-800">
-              <AvatarImage src={profile.avatar} alt={profile.name} />
-              <AvatarFallback>AM</AvatarFallback>
-            </Avatar>
+            <DarkLightAvatar
+              dark={profile.avatar.dark}
+              light={profile.avatar.light}
+              fallback={profile.avatar.fallback}
+              className="h-28 w-28"
+            />
+
             
             <div className="mb-2 flex items-center gap-2">
               <h1 className="text-slate-900 dark:text-slate-50">{profile.name}</h1>
@@ -258,9 +270,12 @@ export function LinkInBio() {
           </div>
 
           {/* Footer */}
-          <div className="mt-12 text-center">
-            <p className="text-slate-500 dark:text-slate-400">
-              Made with ❤️ using shadcn/ui
+          <div className="flex flex-col mt-12 justify-center items-center bg-white text-center">
+            <p className="text-center text-foreground text-slate-500 text-sm dark:text-slate-400">
+              2025© by <a>KALEIDOSCOPE of BUTTERFLIES</a>
+            </p>
+            <p className="text-center text-slate-500 text-sm dark:text-slate-400">
+              Made with ❤️ using monadic/ui
             </p>
           </div>
         </div>
