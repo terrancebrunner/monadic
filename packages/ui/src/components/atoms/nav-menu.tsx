@@ -13,17 +13,17 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
     <NavigationMenuList className="data-[orientation=vertical]:-ms-2 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
       <NavigationMenuItem>
         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <a href="#">Home</a>
+          <a href="#">Get Started!</a>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <a href="#">Blog</a>
+          <a href="#">Components</a>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>
         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <a href="#">About</a>
+          <a href="#">Blocks</a>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>

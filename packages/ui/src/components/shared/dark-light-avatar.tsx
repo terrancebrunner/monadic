@@ -26,7 +26,7 @@ export default function DarkLightAvatar({
 
   return (
     <Avatar className={`h-40 w-40 p-2 ${className}`}>
-      <AvatarImage src={avatarSrc} alt="Avatar" className="mt-1" />
+      <AvatarImage src={avatarSrc} alt="Avatar" className="" />
       <AvatarFallback>{fallback}</AvatarFallback>
     </Avatar>
   );

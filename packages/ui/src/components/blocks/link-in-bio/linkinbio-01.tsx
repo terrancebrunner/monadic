@@ -53,14 +53,14 @@ export function LinkInBio() {
   const [isSharing, setIsSharing] = useState(false)
 
   const profile = {
-    name: "K.O. Butterflies",
-    username: "@KOButterflies",
-    bio: "Digital Creator • Designer • Developer",
+    name: "Monadic UI",
+    username: "@monadic",
+    bio: "Design • Develop • Deliver",
     tagline: "Building beautiful things on the internet ✨",
     avatar: {
       dark: "/monadic_logo_dark.svg",
       light: "/monadic_logo_light.svg",
-      fallback: "Kohrt, MD"
+      fallback: "MON"
     },
     verified: true
   }
@@ -135,18 +135,7 @@ export function LinkInBio() {
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
         <div className="mx-auto max-w-2xl px-4 py-12">
           {/* Theme Toggle */}
-          <div className="mb-8 flex justify-end">
-            <div className="flex items-center gap-2">
-              <Label htmlFor="theme-toggle" className="cursor-pointer">
-                {isDark ? <Moon className="h-4 w-4" /> : <Sun className="h-4 w-4" />}
-              </Label>
-              <Switch
-                id="theme-toggle"
-                checked={isDark}
-                onCheckedChange={setIsDark}
-              />
-            </div>
-          </div>
+
 
           {/* Profile Section */}
           <div className="mb-8 flex flex-col items-center text-center">
@@ -199,27 +188,27 @@ export function LinkInBio() {
           </div>
 
           {/* Analytics Card */}
-          <Card className="mb-6">
-            <CardHeader>
-              <CardTitle className="flex items-center gap-2">
+          <Card className="mb-6 bg-blue-300">
+            <CardHeader className="bg-red-400">
+              <CardTitle className="flex items-center bg-green-300 gap-2">
                 <TrendingUp className="h-5 w-5" />
                 Profile Analytics
               </CardTitle>
-              <CardDescription>Your link performance overview</CardDescription>
+              <CardDescription className="bg-green-300">Your link performance overview</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid grid-cols-3 gap-4">
-                <div className="flex flex-col items-center">
+              <div className="grid bg-red-400 grid-cols-3 gap-4">
+                <div className="flex bg-green-300 flex-col items-center">
                   <Eye className="mb-2 h-5 w-5 text-slate-500 dark:text-slate-400" />
                   <div className="text-slate-900 dark:text-slate-50">{stats.totalViews.toLocaleString()}</div>
                   <div className="text-slate-500 dark:text-slate-400">Views</div>
                 </div>
                 <div className="flex flex-col items-center">
-                  <MousePointerClick className="mb-2 h-5 w-5 text-slate-500 dark:text-slate-400" />
-                  <div className="text-slate-900 dark:text-slate-50">{stats.totalClicks.toLocaleString()}</div>
-                  <div className="text-slate-500 dark:text-slate-400">Clicks</div>
+                  <MousePointerClick className="mb-2 h-5 w-5 bg-purple-800 text-slate-500 dark:text-slate-400" />
+                  <div className="text-slate-900 bg-purple-800 dark:text-slate-50">{stats.totalClicks.toLocaleString()}</div>
+                  <div className="text-slate-500 bg-purple-800 dark:text-slate-400">Clicks</div>
                 </div>
-                <div className="flex flex-col items-center">
+                <div className="flex bg-green-300 flex-col items-center">
                   <TrendingUp className="mb-2 h-5 w-5 text-slate-500 dark:text-slate-400" />
                   <div className="text-slate-900 dark:text-slate-50">{stats.engagement}%</div>
                   <div className="text-slate-500 dark:text-slate-400">Rate</div>
@@ -235,7 +224,7 @@ export function LinkInBio() {
             {links.map((link) => (
               <Card
                 key={link.id}
-                className="group cursor-pointer transition-all hover:scale-[1.02] hover:shadow-lg"
+                className="flex h-[90px] group cursor-pointer transition-all hover:scale-[1.02] hover:shadow-lg"
               >
                 <a href={link.url} className="block">
                   <CardHeader className="pb-3">
@@ -270,9 +259,9 @@ export function LinkInBio() {
           </div>
 
           {/* Footer */}
-          <div className="flex flex-col mt-12 justify-center items-center bg-white text-center">
+          <div className="flex flex-col mt-12 justify-center items-center text-center">
             <p className="text-center text-foreground text-slate-500 text-sm dark:text-slate-400">
-              2025© by <a>KALEIDOSCOPE of BUTTERFLIES</a>
+
             </p>
             <p className="text-center text-slate-500 text-sm dark:text-slate-400">
               Made with ❤️ using monadic/ui

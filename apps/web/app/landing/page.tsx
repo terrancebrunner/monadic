@@ -1,12 +1,12 @@
-import { Header } from "@workspace/ui/components/luxe/Header";
-import { Hero } from "@workspace/ui/components/luxe/Hero";
-import { Features } from "@workspace/ui/components/luxe/Features";
-import { ProductShowcase } from "@workspace/ui/components/luxe/ProductShowcase";
-import { Testimonials } from "@workspace/ui/components/luxe/Testimonials";
-import { Newsletter } from "@workspace/ui/components/luxe/Newsletter";
-import { Footer } from "@workspace/ui/components/luxe/Footer";
-
 import "@workspace/ui/styles/luxe.css";
+
+import { Header } from "@workspace/ui/components/blocks/luxe/lux-header";
+import { Hero } from "@workspace/ui/components/blocks/luxe/lux-hero";
+import { Features } from "@workspace/ui/components/blocks/luxe/lux-features";
+import { ProductShowcase } from "@workspace/ui/components/blocks/luxe/lux-product-showcase";
+import { Testimonials } from "@workspace/ui/components/blocks/luxe/lux-testimonials";
+import { Newsletter } from "@workspace/ui/components/blocks/luxe/lux-newsletter";
+import { Footer } from "@workspace/ui/components/blocks/luxe/lux-footer";
 
 export default function Page() {
   return (
