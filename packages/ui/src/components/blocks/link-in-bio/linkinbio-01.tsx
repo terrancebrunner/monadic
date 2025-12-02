@@ -190,23 +190,23 @@ export function LinkInBio() {
           {/* Analytics Card */}
           <Card className="mb-6 bg-blue-300">
             <CardHeader className="bg-red-400">
-              <CardTitle className="flex items-center bg-green-300 gap-2">
+              <CardTitle className="flex items-center gap-2">
                 <TrendingUp className="h-5 w-5" />
                 Profile Analytics
               </CardTitle>
-              <CardDescription className="bg-green-300">Your link performance overview</CardDescription>
+              <CardDescription className="">Your link performance overview</CardDescription>
             </CardHeader>
             <CardContent>
-              <div className="grid bg-red-400 grid-cols-3 gap-4">
-                <div className="flex bg-green-300 flex-col items-center">
+              <div className="grid grid-cols-3 gap-4">
+                <div className="flex flex-col items-center">
                   <Eye className="mb-2 h-5 w-5 text-slate-500 dark:text-slate-400" />
                   <div className="text-slate-900 dark:text-slate-50">{stats.totalViews.toLocaleString()}</div>
                   <div className="text-slate-500 dark:text-slate-400">Views</div>
                 </div>
                 <div className="flex flex-col items-center">
-                  <MousePointerClick className="mb-2 h-5 w-5 bg-purple-800 text-slate-500 dark:text-slate-400" />
-                  <div className="text-slate-900 bg-purple-800 dark:text-slate-50">{stats.totalClicks.toLocaleString()}</div>
-                  <div className="text-slate-500 bg-purple-800 dark:text-slate-400">Clicks</div>
+                  <MousePointerClick className="mb-2 h-5 w-5 text-slate-500 dark:text-slate-400" />
+                  <div className="text-slate-900 dark:text-slate-50">{stats.totalClicks.toLocaleString()}</div>
+                  <div className="text-slate-500 dark:text-slate-400">Clicks</div>
                 </div>
                 <div className="flex bg-green-300 flex-col items-center">
                   <TrendingUp className="mb-2 h-5 w-5 text-slate-500 dark:text-slate-400" />
