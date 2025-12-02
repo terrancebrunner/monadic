@@ -188,8 +188,8 @@ export function LinkInBio() {
           </div>
 
           {/* Analytics Card */}
-          <Card className="mb-6 bg-blue-300">
-            <CardHeader className="bg-red-400">
+          <Card className="mb-6">
+            <CardHeader className="">
               <CardTitle className="flex items-center gap-2">
                 <TrendingUp className="h-5 w-5" />
                 Profile Analytics
@@ -208,7 +208,7 @@ export function LinkInBio() {
                   <div className="text-slate-900 dark:text-slate-50">{stats.totalClicks.toLocaleString()}</div>
                   <div className="text-slate-500 dark:text-slate-400">Clicks</div>
                 </div>
-                <div className="flex bg-green-300 flex-col items-center">
+                <div className="flex flex-col items-center">
                   <TrendingUp className="mb-2 h-5 w-5 text-slate-500 dark:text-slate-400" />
                   <div className="text-slate-900 dark:text-slate-50">{stats.engagement}%</div>
                   <div className="text-slate-500 dark:text-slate-400">Rate</div>
