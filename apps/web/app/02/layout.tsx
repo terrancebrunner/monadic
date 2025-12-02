@@ -1,4 +1,4 @@
-import "@workspace/ui/styles/globals.css";
+import "@workspace/ui/styles/luxe.css";
 import { ThemeProvider } from "@workspace/ui/components/shared/theme-provider";
 // import { Providers } from "@workspace/ui/components/shared/providers";
 import Navbar from "@workspace/ui/components/blocks/navbar-02";
