@@ -3,7 +3,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
-} from "@workspace/ui/components/ui/accordion.js";
+} from "@workspace/ui/components/ui/accordion";
 import {
   BookCheck,
   ChartPie,

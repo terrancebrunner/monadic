@@ -1,5 +1,5 @@
-import { Badge } from "@workspace/ui/components/ui/badge.js";
-import { Button } from "@workspace/ui/components/ui/button.js";
+import { Badge } from "@workspace/ui/components/ui/badge";
+import { Button } from "@workspace/ui/components/ui/button";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
 /* import Link from "next/link"; */
 

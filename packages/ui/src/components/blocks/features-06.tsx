@@ -1,4 +1,4 @@
-import { Button } from "@workspace/ui/components/ui/button.js";
+import { Button } from "@workspace/ui/components/ui/button";
 import { ArrowRight } from "lucide-react";
  /* import Link from "next/link"; link-jk */
 
