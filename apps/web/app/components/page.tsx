@@ -2,7 +2,6 @@ import { Button } from "@workspace/ui/components/ui/button";
 import { FancyButton } from "@workspace/ui/components/extended/fancy-button";
 import { Card, CardAction, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@workspace/ui/components/ui/card";
 import { Separator } from "@workspace/ui/components/ui/separator";
-import { Badge } from "@workspace/ui/components/ui/badge";
 import { Input } from "@workspace/ui/components/ui/input"
 import { Label } from "@workspace/ui/components/ui/label"
 import { TrendingUp, Eye, MousePointerClick 
