@@ -49,6 +49,12 @@ export function LinkInBio() {
   const [isDark, setIsDark] = useState(false)
   const [isSharing, setIsSharing] = useState(false)
 
+  const avatar = {
+    dark: "./gmh_logo_dark.svg",
+    light: "./gmh_logo_light.svg",
+    fallback: "GMH"
+  }
+
   const profile = {
     name: "Monorepo Portal",
     username: "@gmhlab",
@@ -134,7 +140,7 @@ export function LinkInBio() {
 
           {/* Profile Section */}
           <div className="mb-6 flex flex-col items-center text-center">
-            <DarkLightAvatar className="mb-1" />
+            <DarkLightAvatar dark={avatar.dark} light={avatar.light} className="mb-1" />
           
             <div className="mb-3 flex items-center gap-2">
               <h1 className="text-5xl font-normal font-serif text-foreground">{profile.name}</h1>
