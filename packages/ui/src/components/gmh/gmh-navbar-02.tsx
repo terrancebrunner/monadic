@@ -17,17 +17,21 @@ const Navbar = () => {
       <div className="h-full flex items-center justify-between max-w-(--breakpoint-xl) mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center gap-12">
           <a href="./01">
-            <DarkLightAvatar dark={avatar.dark} light={avatar.light} className="w-16 h-16"/>
+            <DarkLightAvatar dark={avatar.dark} light={avatar.light} fallback={avatar.fallback} className="w-16 h-16"/>
           </a>
           {/* Desktop Menu */}
           <NavMenu className="hidden md:block" />
         </div>
 
         <div className="flex items-center gap-3">
-          <Button variant="outline" className="hidden sm:inline-flex">
-            <a href="/login/01">Sign In</a>
-          </Button>
-          <Button><a href="/signup/01">Sign Up</a></Button>
+          <a href="/login/01">
+            <Button variant="outline" className="hidden sm:inline-flex">
+              Sign In
+            </Button>
+          </a>
+          <a href="/signup/01">
+            <Button>Sign Up</Button>
+          </a>
          <ModeToggle />
 
           {/* Mobile Menu */}

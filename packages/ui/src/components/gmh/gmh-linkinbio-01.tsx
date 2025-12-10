@@ -130,13 +130,7 @@ export function LinkInBio() {
   return (
     <div className="min-h-screen bg-background">
       <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-200 dark:from-[#033c5a] dark:to-[#02263a]">
-        <div className="mx-auto max-w-lg px-4 pt-4 pb-12">
-          {/* Theme Toggle */}
-          <div className="mb-4 flex justify-end">
-            <div className="flex items-center gap-2">
-              <ModeToggle />
-            </div>
-          </div>
+        <div className="mx-auto max-w-2xl px-4 pt-4 pb-12">
 
           {/* Profile Section */}
           <div className="mb-6 flex flex-col items-center text-center">
