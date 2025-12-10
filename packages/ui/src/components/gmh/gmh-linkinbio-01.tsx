@@ -133,8 +133,8 @@ export function LinkInBio() {
         <div className="mx-auto max-w-2xl px-4 pt-4 pb-12">
 
           {/* Profile Section */}
-          <div className="mb-6 flex flex-col items-center text-center">
-            <DarkLightAvatar dark={avatar.dark} light={avatar.light} className="mb-1" />
+          <div className="mb-6 rounded-full flex flex-col items-center text-center">
+            <DarkLightAvatar dark={avatar.dark} light={avatar.light} className="" />
           
             <div className="mb-3 flex items-center gap-2">
               <h1 className="text-5xl font-normal font-serif text-foreground">{profile.name}</h1>
@@ -192,7 +192,7 @@ export function LinkInBio() {
                 </div>
                 <div className="flex flex-col items-center">
                   <TrendingUp className="mb-2 h-5 w-5 text-slate-500 dark:text-slate-400" />
-                  <div className="text-accent dark:text-slate-50">{stats.engagement}%</div>
+                  <div className="text-accent">{stats.engagement}%</div>
                   <div className="text-slate-500 dark:text-slate-400">Rate</div>
                 </div>
               </div>
@@ -212,7 +212,7 @@ export function LinkInBio() {
                   <CardHeader className="pb-3">
                     <div className="flex items-start justify-between">
                       <div className="flex items-start gap-3">
-                        <div className="mt-1 rounded-lg bg-slate-100 p-2 dark:bg-slate-800">
+                        <div className="mt-1 rounded-lg bg-accent p-2">
                           {link.icon}
                         </div>
                         <div className="flex-1">
