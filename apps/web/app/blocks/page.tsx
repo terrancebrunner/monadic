@@ -1,3 +1,15 @@
+"use client"
+
+import { 
+  GetItSection, 
+  HowToUseSection, 
+  InnovationHeader, 
+  NavigationFooter, 
+  TestingSection, 
+  UserStorySection, 
+  WhatIsItSection } 
+  from "@workspace/ui/components/gmh/innovations/";
+
 import Navbar1 from "@workspace/ui/components/blocks/navbar-01";
 import Navbar2 from "@workspace/ui/components/blocks/navbar-02";
 import Footer2 from "@workspace/ui/components/blocks/footer-02";
@@ -30,6 +42,13 @@ export default function Page() {
       <Features6 />
       <Features7 />
       <Footer2 />
+      <GetItSection />
+      <HowToUseSection />
+      <InnovationHeader />
+      <NavigationFooter />
+      <TestingSection />
+      <UserStorySection />
+      <WhatIsItSection />
     </>
   );
 }
