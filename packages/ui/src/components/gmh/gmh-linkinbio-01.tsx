@@ -134,7 +134,7 @@ export function LinkInBio() {
 
           {/* Profile Section */}
           <div className="mb-6 rounded-full flex flex-col items-center text-center">
-            <DarkLightAvatar dark={avatar.dark} light={avatar.light} className="" />
+            <DarkLightAvatar dark={avatar.dark} light={avatar.light} fallback={avatar.fallback} className="" />
           
             <div className="mb-3 flex items-center gap-2">
               <h1 className="text-5xl font-normal font-serif text-foreground">{profile.name}</h1>

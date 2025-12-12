@@ -1,3 +1,5 @@
+'use client';
+
 import {
   NavigationMenu,
   NavigationMenuItem,
@@ -13,7 +15,7 @@ export const NavMenu = (props: ComponentProps<typeof NavigationMenu>) => (
     <NavigationMenuList className="data-[orientation=vertical]:-ms-2 data-[orientation=vertical]:flex-col data-[orientation=vertical]:items-start data-[orientation=vertical]:justify-start">
       <NavigationMenuItem>
         <NavigationMenuLink asChild className={navigationMenuTriggerStyle()}>
-          <a href="#">Get Started!</a>
+          <a href="/innovations">Get Started!</a>
         </NavigationMenuLink>
       </NavigationMenuItem>
       <NavigationMenuItem>

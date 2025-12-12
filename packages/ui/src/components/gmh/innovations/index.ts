@@ -1,0 +1,7 @@
+export * from "@workspace/ui/components/gmh/innovations/gmh-getit-section"
+export * from "@workspace/ui/components/gmh/innovations/gmh-howtouseit-section"
+export * from "@workspace/ui/components/gmh/innovations/gmh-innovation-header"
+export * from "@workspace/ui/components/gmh/innovations/gmh-navigation-footer"
+export * from "@workspace/ui/components/gmh/innovations/gmh-testing-section"
+export * from "@workspace/ui/components/gmh/innovations/gmh-userstory-section"
+export * from "@workspace/ui/components/gmh/innovations/gmh-whatisit-section"
