@@ -1,5 +1,3 @@
-'use client';
-
 import { motion } from 'motion/react';
 import { Card } from '@workspace/ui/components/ui/card';
 import { Circle, Square, Plus, Star, ArrowRight } from 'lucide-react';

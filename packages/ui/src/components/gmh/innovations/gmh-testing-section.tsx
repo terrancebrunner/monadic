@@ -1,5 +1,3 @@
-'use client';
-
 import { motion } from 'motion/react';
 import { Card } from '@workspace/ui/components/ui/card';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
