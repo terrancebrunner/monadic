@@ -1,9 +1,10 @@
+import { WhatIsItSection } from "@workspace/ui/components/gmh/innovations/gmh-whatisit-section"
+
 import { GetItSection } from "@workspace/ui/components/gmh/innovations/gmh-getit-section"
 import { HowToUseSection } from "@workspace/ui/components/gmh/innovations/gmh-howtouseit-section"
 import { InnovationHeader } from "@workspace/ui/components/gmh/innovations/gmh-innovation-header"
 import { NavigationFooter } from "@workspace/ui/components/gmh/innovations/gmh-navigation-footer"
 import { UserStorySection } from "@workspace/ui/components/gmh/innovations/gmh-userstory-section"
-import { WhatIsItSection } from "@workspace/ui/components/gmh/innovations/gmh-whatisit-section"
 import { TestingSection } from "@workspace/ui/components/gmh/innovations/gmh-testing-section"
 
 import Navbar1 from "@workspace/ui/components/blocks/navbar-01";
@@ -38,13 +39,14 @@ export default function Page() {
       <Features6 />
       <Features7 />
       <Footer2 />
+      <WhatIsItSection />
       <GetItSection />
       <HowToUseSection />
       <InnovationHeader />
       <NavigationFooter />
       <TestingSection />
       <UserStorySection />
-      <WhatIsItSection />
+
     </>
   );
 }

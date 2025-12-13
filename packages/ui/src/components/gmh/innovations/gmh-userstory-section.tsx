@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from "motion/react";
 import { Card } from "@workspace/ui/components/ui/card";
 import { User, Quote } from "lucide-react";

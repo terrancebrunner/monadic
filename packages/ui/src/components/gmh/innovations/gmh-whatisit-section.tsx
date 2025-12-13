@@ -1,15 +1,8 @@
-import { motion } from 'motion/react';
 import { Card } from '@workspace/ui/components/ui/card';
 
 export function WhatIsItSection() {
   return (
-    <motion.div 
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.6 }}
-      className="container mx-auto px-4 -mt-12 relative z-20"
-    >
+    <div className="w-full max-w-5xl container mx-auto px-4 -mt-12 relative z-20" >
       <Card className="p-8 bg-white/10 backdrop-blur-sm shadow-2xl border-white/20">
         <div className="grid md:grid-cols-2 gap-8">
           <div>
@@ -33,13 +26,7 @@ export function WhatIsItSection() {
               <p className="text-sm">Special feature highlight</p>
             </div>
           </div>
-          <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.5, delay: 0.2 }}
-            className="bg-white/5 rounded-lg p-8 flex items-center justify-center relative overflow-hidden"
-          >
+          <div className="bg-white/5 rounded-lg p-8 flex items-center justify-center relative overflow-hidden">
             <div className="absolute inset-0 bg-gradient-to-br from-[#AA9868]/20 to-white/10"></div>
             <div className="relative z-10 text-center">
               <div className="w-32 h-32 bg-white/20 rounded-full mx-auto mb-4 flex items-center justify-center shadow-lg">
@@ -47,9 +34,9 @@ export function WhatIsItSection() {
               </div>
               <p className="text-white/80">Visual representation</p>
             </div>
-          </motion.div>
+          </div>
         </div>
       </Card>
-    </motion.div>
+    </div>
   );
 }

@@ -1,5 +1,3 @@
-'use client';
-
 import { Button } from "@workspace/ui/components/ui/button";
 import { NavMenu } from "@workspace/ui/components/gmh/gmh-nav-menu";
 import { NavigationSheet } from "@workspace/ui/components/atoms/navigation-sheet";
