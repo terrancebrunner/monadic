@@ -1,6 +1,6 @@
 export function InnovationHeader() {
   return (
-    <div className="relative py-16 overflow-hidden">
+    <div className="relative py-16 mb-12">
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-10 left-20 w-64 h-64 bg-white rounded-full blur-3xl"></div>
         <div className="absolute bottom-10 right-20 w-96 h-96 bg-white rounded-full blur-3xl"></div>
@@ -9,7 +9,7 @@ export function InnovationHeader() {
         <h1 className="text-white mb-4">
           Innovation Title
         </h1>
-        <p className="text-white/90">
+        <p className="text-white/90 text-3xl">
           What is it?
         </p>
       </div>
