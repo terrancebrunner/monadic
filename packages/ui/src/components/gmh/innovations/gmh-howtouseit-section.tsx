@@ -42,7 +42,7 @@ const steps = [
 export function HowToUseSection() {
   return (
     <div className="py-20 mt-20">
-      <div className="w-full max-w-5xl container mx-auto px-4">
+      <div className="w-full max-w-2xl container mx-auto px-4">
         <h2 className="text-white text-center mb-12">
           How do you use it?
         </h2>

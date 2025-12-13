@@ -1,6 +1,5 @@
 "use client"
 
-import { motion } from 'motion/react';
 import { Card } from '@workspace/ui/components/ui/card';
 import { BarChart, Bar, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, PieChart, Pie, Cell } from 'recharts';
 
@@ -27,30 +26,15 @@ const COLORS = ['#033C5A', '#AA9868', '#5A8BA6', '#D4C5A0'];
 
 export function TestingSection() {
   return (
-    <div className="container mx-auto px-4 py-20">
-      <motion.h2 
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        className="text-white text-center mb-12"
-      >
+    <div className="max-w-5xl container mx-auto px-4 py-20">
+      <h2 className="text-white text-center mb-12">
         How have we tested it?
-      </motion.h2>
+      </h2>
       
-      <motion.div
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
-      >
+      <div>
         <Card className="p-8 bg-white/10 backdrop-blur-sm shadow-2xl border-white/20">
           <div className="grid md:grid-cols-2 gap-8 mb-8">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5 }}
-            >
+            <div>
               <h3 className="text-white mb-4">How did we score on test performance?</h3>
               <p className="text-white/80 mb-6">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Our comprehensive testing revealed 
@@ -59,15 +43,9 @@ export function TestingSection() {
               <div className="bg-white/10 p-4 rounded-lg">
                 <p className="text-sm text-white/90">We did so and so well with testing because of these key factors and improvements.</p>
               </div>
-            </motion.div>
+            </div>
             
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.1 }}
-              className="bg-white/5 rounded-lg p-6"
-            >
+            <div className="bg-white/5 rounded-lg p-6">
               <ResponsiveContainer width="100%" height={250}>
                 <BarChart data={performanceData}>
                   <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.2)" />
@@ -79,17 +57,11 @@ export function TestingSection() {
                   <Bar dataKey="value" fill="#AA9868" radius={[8, 8, 0, 0]} />
                 </BarChart>
               </ResponsiveContainer>
-            </motion.div>
+            </div>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8">
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.2 }}
-              className="bg-white/5 rounded-lg p-6"
-            >
+            <div className="bg-white/5 rounded-lg p-6">
               <h4 className="text-white mb-4 text-center">Test Results Distribution</h4>
               <ResponsiveContainer width="100%" height={200}>
                 <PieChart>
@@ -117,14 +89,9 @@ export function TestingSection() {
                   </div>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.5, delay: 0.3 }}
-            >
+            <div>
               <h4 className="text-white mb-4">Combination of testing data</h4>
               <p className="text-white/80 mb-4">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Multiple testing methodologies were employed 
@@ -150,10 +117,10 @@ export function TestingSection() {
                   </PieChart>
                 </ResponsiveContainer>
               </div>
-            </motion.div>
+            </div>
           </div>
         </Card>
-      </motion.div>
+      </div>
     </div>
   );
 }

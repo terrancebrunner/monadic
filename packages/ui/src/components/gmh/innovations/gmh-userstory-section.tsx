@@ -7,33 +7,18 @@ import { User, Quote } from "lucide-react";
 export function UserStorySection() {
   return (
     <div className="py-20">
-      <div className="container mx-auto px-4">
-        <motion.h2
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="text-white text-center mb-12"
-        >
+      <div className="max-w-5xl container mx-auto px-4">
+        <h2 className="text-white text-center mb-12">
           Who has used it?
-        </motion.h2>
+        </h2>
 
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
+        <div>
           <Card className="p-8 bg-white/10 backdrop-blur-sm shadow-2xl overflow-hidden relative border-white/20">
             <div className="absolute top-0 right-0 w-64 h-64 bg-[#AA9868]/10 rounded-full blur-3xl"></div>
             <div className="absolute bottom-0 left-0 w-64 h-64 bg-[#033C5A]/10 rounded-full blur-3xl"></div>
 
             <div className="grid md:grid-cols-2 gap-8 relative z-10">
-              <motion.div
-                initial={{ opacity: 0, x: -30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5 }}
-              >
+              <div>
                 <div className="flex items-center gap-3 mb-6">
                   <Quote className="w-8 h-8 text-[#AA9868]" />
                   <h3 className="text-white">
@@ -74,22 +59,13 @@ export function UserStorySection() {
                     efficiency."
                   </p>
                 </div>
-              </motion.div>
+              </div>
 
-              <motion.div
-                initial={{ opacity: 0, x: 30 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ duration: 0.5, delay: 0.2 }}
-                className="flex flex-col items-center justify-center"
+              <div className="flex flex-col items-center justify-center"
               >
-                <motion.div
-                  whileHover={{ scale: 1.05 }}
-                  transition={{ duration: 0.3 }}
-                  className="bg-gradient-to-br from-[#033C5A] to-[#AA9868] w-48 h-48 rounded-full flex items-center justify-center shadow-2xl mb-6"
-                >
+                <div className="bg-gradient-to-br from-[#033C5A] to-[#AA9868] w-48 h-48 rounded-full flex items-center justify-center shadow-2xl mb-6">
                   <User className="w-24 h-24 text-white" />
-                </motion.div>
+                </div>
 
                 <div className="text-center">
                   <h4 className="text-white mb-2">
@@ -102,10 +78,10 @@ export function UserStorySection() {
                     Technology Solutions Inc.
                   </p>
                 </div>
-              </motion.div>
+              </div>
             </div>
           </Card>
-        </motion.div>
+        </div>
       </div>
     </div>
   );
