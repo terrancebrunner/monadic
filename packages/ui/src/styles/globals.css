@@ -1,5 +1,19 @@
+/* CSS Cascading Cosplay */
+/* Cozom roll CSS */
+
 @import "tailwindcss";
 @import "tw-animate-css";
+@layer theme, base, components, utilities;
+
+@layer theme {
+  @theme default {
+    --font-sans:
+      ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+    --font-mono:
+      ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+      "Courier New", monospace;
 
 @source "../../../apps/**/*.{ts,tsx}";
 @source "../../../components/**/*.{ts,tsx}";
