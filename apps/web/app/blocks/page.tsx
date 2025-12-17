@@ -1,11 +1,11 @@
-import { WhatIsItSection } from "@workspace/ui/components/gmh/innovations/gmh-whatisit-section"
+import { WhatIsItSection } from "@workspace/ui/components/gmh/blocks/gmh-whatisit-section"
 
-import { GetItSection } from "@workspace/ui/components/gmh/innovations/gmh-getit-section"
-import { HowToUseSection } from "@workspace/ui/components/gmh/innovations/gmh-howtouseit-section"
-import { InnovationHeader } from "@workspace/ui/components/gmh/innovations/gmh-innovation-header"
-import { NavigationFooter } from "@workspace/ui/components/gmh/innovations/gmh-navigation-footer"
-import { UserStorySection } from "@workspace/ui/components/gmh/innovations/gmh-userstory-section"
-import { TestingSection } from "@workspace/ui/components/gmh/innovations/gmh-testing-section"
+import { GetItSection } from "@workspace/ui/components/gmh/blocks/gmh-getit-section"
+import { HowToUseSection } from "@workspace/ui/components/gmh/blocks/gmh-howtouseit-section"
+import { InnovationHeader } from "@workspace/ui/components/gmh/blocks/gmh-innovation-header"
+import { NavigationFooter } from "@workspace/ui/components/gmh/blocks/gmh-navigation-footer"
+import { UserStorySection } from "@workspace/ui/components/gmh/blocks/gmh-userstory-section"
+import { TestingSection } from "@workspace/ui/components/gmh/blocks/gmh-testing-section"
 
 import Navbar1 from "@workspace/ui/components/blocks/navbar-01";
 import Navbar2 from "@workspace/ui/components/blocks/navbar-02";

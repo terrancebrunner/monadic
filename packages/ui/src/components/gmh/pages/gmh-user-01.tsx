@@ -1,10 +1,9 @@
 import { motion } from 'motion/react';
 import { Users, GraduationCap, Heart, BookOpen, Calendar, MessageCircle, Shield, Settings } from 'lucide-react';
-import centerLogo from 'figma:asset/512bda7ab81cb1facff865c5c2444a76bc3e84a5.png';
-import { NavigationCard } from './components/NavigationCard';
-import { QuickAccessCard } from './components/QuickAccessCard';
-import { AnimatedBackground } from './components/AnimatedBackground';
-import { CommunityShowcase } from './components/CommunityShowcase';
+import { NavigationCard } from '@workspace/ui/components/gmh/blocks/gmh-user-navigation-card';
+import { QuickAccessCard } from './components/QuickAccessCard.js';
+import { AnimatedBackground } from './components/AnimatedBackground.js';
+import { CommunityShowcase } from './components/CommunityShowcase.js';
 
 export default function App() {
   const userTypes = [
@@ -93,7 +92,7 @@ export default function App() {
             className="mb-6"
           >
             <img 
-              src={centerLogo} 
+              src="pas_logo_light.png" 
               alt="Global Mental Health Center Logo"
               className="w-32 h-32 mx-auto drop-shadow-2xl"
             />

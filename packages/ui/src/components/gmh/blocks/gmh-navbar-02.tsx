@@ -1,8 +1,8 @@
 import { Button } from "@workspace/ui/components/ui/button";
-import { NavMenu } from "@workspace/ui/components/gmh/gmh-nav-menu";
-import { NavigationSheet } from "@workspace/ui/components/atoms/navigation-sheet";
-import { ModeToggle } from "@workspace/ui/components/shared/mode-toggle";
-import DarkLightAvatar from "@workspace/ui/components/shared/dark-light-avatar";
+import { NavMenu } from "@workspace/ui/components/gmh/blocks/gmh-nav-menu.js";
+import { NavigationSheet } from "@workspace/ui/components/blocks/navigation-sheet-01.js";
+import { ModeToggle } from "@workspace/ui/components/blocks/shared/mode-toggle.js";
+import DarkLightAvatar from "@workspace/ui/components/blocks/shared/dark-light-avatar.js";
 
 const Navbar = () => {
 

@@ -1,12 +1,15 @@
-"use client"
+"use client";
 
-import DarkLightAvatar from "@workspace/ui/components/shared/dark-light-avatar" ;
-import { ModeToggle } from "@workspace/ui/components/shared/mode-toggle";
+import "@workspace/ui/styles/linkinbio.css"
+import DarkLightAvatar from "@workspace/ui/components/blocks/shared/dark-light-avatar.js"
+
 import { useState } from "react"
 import { Button } from "@workspace/ui/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@workspace/ui/components/ui/card"
 import { Badge } from "@workspace/ui/components/ui/badge"
 import { Separator } from "@workspace/ui/components/ui/separator"
+import { Switch } from "@workspace/ui/components/ui/switch"
+import { Label } from "@workspace/ui/components/ui/label"
 import { 
   Instagram, 
   Twitter, 
@@ -26,7 +29,7 @@ import {
   Eye,
   MousePointerClick
 } from "lucide-react"
-
+import { Fallback } from "@radix-ui/react-avatar";
 
 interface LinkItem {
   id: string
@@ -49,33 +52,33 @@ export function LinkInBio() {
   const [isDark, setIsDark] = useState(false)
   const [isSharing, setIsSharing] = useState(false)
 
-  const avatar = {
-    dark: "./gmh_logo_dark.svg",
-    light: "./gmh_logo_light.svg",
-    fallback: "GMH"
-  }
-
   const profile = {
-    name: "Monorepo Portal",
-    username: "@gmhlab",
-    bio: "The GW Center for Global Mental Health",
-    tagline: 'Washington, DC'
+    name: "Monadic UI",
+    username: "@monadic",
+    bio: "Design • Develop • Deliver",
+    tagline: "Building beautiful things on the internet ✨",
+    avatar: {
+      dark: "/monadic_logo_dark.svg",
+      light: "/monadic_logo_light.svg",
+      fallback: "MON"
+    },
+    verified: true
   }
 
   const socialLinks: SocialLink[] = [
-    { platform: "Instagram", url: "", icon: <Instagram className="h-5 w-5" />, color: "hover:text-white" },
-    { platform: "Twitter", url: "", icon: <Twitter className="h-5 w-5" />, color: "hover:text-white" },
-    { platform: "YouTube", url: "", icon: <Youtube className="h-5 w-5" />, color: "hover:text-white" },
-    { platform: "LinkedIn", url: "", icon: <Linkedin className="h-5 w-5" />, color: "hover:text-white" },
-    { platform: "GitHub", url: "", icon: <Github className="h-5 w-5" />, color: "hover:text-slate-700" },
+    { platform: "Instagram", url: "#", icon: <Instagram className="h-5 w-5" />, color: "hover:text-pink-500" },
+    { platform: "Twitter", url: "#", icon: <Twitter className="h-5 w-5" />, color: "hover:text-blue-400" },
+    { platform: "YouTube", url: "#", icon: <Youtube className="h-5 w-5" />, color: "hover:text-red-500" },
+    { platform: "LinkedIn", url: "#", icon: <Linkedin className="h-5 w-5" />, color: "hover:text-blue-600" },
+    { platform: "GitHub", url: "#", icon: <Github className="h-5 w-5" />, color: "hover:text-slate-700" },
   ]
 
   const links: LinkItem[] = [
     {
       id: "1",
-      title: "Website",
-      description: "Our center at The GW School of Medicine and Health Sciences",
-      url: "/login",
+      title: "Portfolio Website",
+      description: "Check out my latest work and projects",
+      url: "#",
       icon: <Globe className="h-5 w-5" />,
       badge: "Featured",
       clicks: 1243
@@ -83,33 +86,33 @@ export function LinkInBio() {
     {
       id: "2",
       title: "Online Store",
-      description: "Shop 'GMH Compendium', exclusive merch, and digital products",
-      url: "/login/05",
+      description: "Shop exclusive merch and digital products",
+      url: "#",
       icon: <ShoppingBag className="h-5 w-5" />,
       badge: "New",
       clicks: 856
     },
     {
       id: "3",
-      title: "Latest News",
-      description: '"10 Tips for Clarivate accreditation" by Dr. Brandon Kohrt MD, PhD"',
-      url: "/signup",
+      title: "Latest Blog Post",
+      description: "10 Tips for Better Design in 2024",
+      url: "#",
       icon: <BookOpen className="h-5 w-5" />,
       clicks: 432
     },
     {
       id: "4",
-      title: "Hire You!",
-      description: "Volunteer and professional trainings",
-      url: "/blocks",
+      title: "Hire Me",
+      description: "Available for freelance projects",
+      url: "#",
       icon: <Briefcase className="h-5 w-5" />,
       clicks: 678
     },
     {
       id: "5",
       title: "Newsletter",
-      description: "Global mental health events and industry insights",
-      url: "/landing",
+      description: "Weekly insights on design and development",
+      url: "#",
       icon: <Mail className="h-5 w-5" />,
       badge: "Popular",
       clicks: 2104
@@ -128,19 +131,34 @@ export function LinkInBio() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-200 dark:from-[#033c5a] dark:to-[#02263a]">
-        <div className="mx-auto max-w-2xl px-4 pt-4 pb-12">
+    <div className={`min-h-screen transition-colors ${isDark ? "dark" : ""}`}>
+      <div className="min-h-screen bg-gradient-to-b from-slate-50 to-slate-100 dark:from-slate-950 dark:to-slate-900">
+        <div className="mx-auto max-w-2xl px-4 py-12">
+          {/* Theme Toggle */}
+
 
           {/* Profile Section */}
-          <div className="mb-6 rounded-full flex flex-col items-center text-center">
-            <DarkLightAvatar dark={avatar.dark} light={avatar.light} fallback={avatar.fallback} className="" />
-          
-            <div className="mb-3 flex items-center gap-2">
-              <h1 className="text-5xl font-normal font-serif text-foreground">{profile.name}</h1>
+          <div className="mb-8 flex flex-col items-center text-center">
+            <DarkLightAvatar
+              dark={profile.avatar.dark}
+              light={profile.avatar.light}
+              fallback={profile.avatar.fallback}
+              className="h-28 w-28"
+            />
+
+            
+            <div className="mb-2 flex items-center gap-2">
+              <h1 className="text-slate-900 dark:text-slate-50">{profile.name}</h1>
+              {profile.verified && (
+                <Badge variant="default" className="gap-1">
+                  <Heart className="h-3 w-3 fill-current" />
+                  Verified
+                </Badge>
+              )}
             </div>
             
-            <p className="mb-2 text-xl text-muted-foreground">{profile.bio}</p>
+            <p className="mb-2 text-slate-600 dark:text-slate-400">{profile.username}</p>
+            <p className="mb-1 text-slate-900 dark:text-slate-50">{profile.bio}</p>
             <p className="text-slate-600 dark:text-slate-400">{profile.tagline}</p>
           </div>
 
@@ -151,7 +169,7 @@ export function LinkInBio() {
                 key={social.platform}
                 variant="outline"
                 size="icon"
-                className={`text-[#aa9868] transition-colors ${social.color}`}
+                className={`transition-colors ${social.color}`}
                 asChild
               >
                 <a href={social.url} target="_blank" rel="noopener noreferrer">
@@ -171,28 +189,28 @@ export function LinkInBio() {
 
           {/* Analytics Card */}
           <Card className="mb-6">
-            <CardHeader>
+            <CardHeader className="">
               <CardTitle className="flex items-center gap-2">
                 <TrendingUp className="h-5 w-5" />
-                Analytics
+                Profile Analytics
               </CardTitle>
-              <CardDescription>Link performance overview</CardDescription>
+              <CardDescription className="">Your link performance overview</CardDescription>
             </CardHeader>
             <CardContent>
               <div className="grid grid-cols-3 gap-4">
                 <div className="flex flex-col items-center">
                   <Eye className="mb-2 h-5 w-5 text-slate-500 dark:text-slate-400" />
-                  <div className="text-accent">{stats.totalViews.toLocaleString()}</div>
+                  <div className="text-slate-900 dark:text-slate-50">{stats.totalViews.toLocaleString()}</div>
                   <div className="text-slate-500 dark:text-slate-400">Views</div>
                 </div>
                 <div className="flex flex-col items-center">
                   <MousePointerClick className="mb-2 h-5 w-5 text-slate-500 dark:text-slate-400" />
-                  <div className="text-accent">{stats.totalClicks.toLocaleString()}</div>
+                  <div className="text-slate-900 dark:text-slate-50">{stats.totalClicks.toLocaleString()}</div>
                   <div className="text-slate-500 dark:text-slate-400">Clicks</div>
                 </div>
                 <div className="flex flex-col items-center">
                   <TrendingUp className="mb-2 h-5 w-5 text-slate-500 dark:text-slate-400" />
-                  <div className="text-accent">{stats.engagement}%</div>
+                  <div className="text-slate-900 dark:text-slate-50">{stats.engagement}%</div>
                   <div className="text-slate-500 dark:text-slate-400">Rate</div>
                 </div>
               </div>
@@ -206,13 +224,13 @@ export function LinkInBio() {
             {links.map((link) => (
               <Card
                 key={link.id}
-                className="group cursor-pointer transition-all hover:scale-[1.02] hover:shadow-lg"
+                className="flex h-[90px] group cursor-pointer transition-all hover:scale-[1.02] hover:shadow-lg"
               >
                 <a href={link.url} className="block">
                   <CardHeader className="pb-3">
                     <div className="flex items-start justify-between">
                       <div className="flex items-start gap-3">
-                        <div className="mt-1 rounded-lg bg-accent p-2">
+                        <div className="mt-1 rounded-lg bg-slate-100 p-2 dark:bg-slate-800">
                           {link.icon}
                         </div>
                         <div className="flex-1">
@@ -241,9 +259,12 @@ export function LinkInBio() {
           </div>
 
           {/* Footer */}
-          <div className="mt-12 text-center">
-            <p className="text-slate-500 dark:text-slate-400">
-              2025© Supporting Wellbeing Worldwide.
+          <div className="flex flex-col mt-12 justify-center items-center text-center">
+            <p className="text-center text-foreground text-slate-500 text-sm dark:text-slate-400">
+
+            </p>
+            <p className="text-center text-slate-500 text-sm dark:text-slate-400">
+              Made with ❤️ using monadic/ui
             </p>
           </div>
         </div>

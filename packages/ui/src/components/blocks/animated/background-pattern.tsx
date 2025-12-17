@@ -1,6 +1,6 @@
 "use client";
 
-import DotPattern from "@workspace/ui/components/animated/dot-pattern";
+import DotPattern from "@workspace/ui/components/blocks/animated/dot-pattern.js";
 import Particles from "@workspace/ui/components/ui/particles";
 import { cn } from "@workspace/ui/lib/utils";
 import { useTheme } from "next-themes";

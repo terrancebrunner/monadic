@@ -1,5 +1,5 @@
 import { Card, CardContent } from "@workspace/ui/components/ui/card";
-import { ImageWithFallback } from "@workspace/ui/components/shared/image-with-fallback";
+import { ImageWithFallback } from "@workspace/ui/components/blocks/shared/image-with-fallback.js";
 
 const testimonials = [
   {
