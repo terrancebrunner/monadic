@@ -1,8 +1,8 @@
 import { Button } from "@workspace/ui/components/ui/button";
-import { Logo } from "@workspace/ui/components/blocks/shared/logo-02.js";
-import { NavMenu } from "@workspace/ui/components/blocks/nav-menu-01.js";
-import { NavigationSheet } from "@workspace/ui/components/blocks/navigation-sheet-01.js";
-import { ModeToggle } from "@workspace/ui/components/blocks/shared/mode-toggle.js";
+import { Logo } from "@workspace/ui/components/blocks/shared/logo-02";
+import { NavMenu } from "@workspace/ui/components/blocks/nav-menu-01";
+import { NavigationSheet } from "@workspace/ui/components/blocks/navigation-sheet-01";
+import { ModeToggle } from "@workspace/ui/components/blocks/shared/mode-toggle";
 
 const Navbar = () => {
   return (

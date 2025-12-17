@@ -6,7 +6,7 @@ import {
   SheetTrigger,
 } from "@workspace/ui/components/ui/sheet";
 import { Menu } from "lucide-react";
-import { Logo } from "@workspace/ui/components/blocks/shared/logo-02.js";
+import { Logo } from "@workspace/ui/components/blocks/shared/logo-02";
 import { NavMenu } from "@workspace/ui/components/blocks/nav-menu-01";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 

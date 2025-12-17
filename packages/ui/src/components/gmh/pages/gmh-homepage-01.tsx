@@ -1,3 +1,5 @@
+"use client"
+
 import { motion } from 'motion/react';
 import { Users, GraduationCap, Heart, BookOpen, Calendar, MessageCircle, Shield, Settings } from 'lucide-react';
 import { NavigationCard } from '@workspace/ui/components/gmh/blocks/gmh-homepage-navigation-card';
@@ -92,7 +94,7 @@ export default function App() {
             className="mb-6"
           >
             <img 
-              src="pas_logo_light.png" 
+              src="gmh_logo_dark.svg" 
               alt="Global Mental Health Center Logo"
               className="w-32 h-32 mx-auto drop-shadow-2xl"
             />

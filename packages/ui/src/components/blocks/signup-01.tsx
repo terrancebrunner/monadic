@@ -1,6 +1,6 @@
 "use client";
 
-import { Logo } from "@workspace/ui/components/blocks/shared/logo-01.js";
+import { Logo } from "@workspace/ui/components/blocks/shared/logo-01";
 import { Button } from "@workspace/ui/components/ui/button";
 import {
   Form,

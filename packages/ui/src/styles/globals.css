@@ -1,7 +1,7 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
-/* @layer theme, base, components, utilities; */
+@layer theme, base, components, utilities;
 
 @custom-variant dark (&:is(.dark *));
 
@@ -452,26 +452,7 @@
   --shadow-xl: var(--shadow-xl);
   --shadow-2xl: var(--shadow-2xl);
 }
-@layer base {
-  * { @apply border-border outline-ring/50; }
-  body { @apply bg-background text-foreground; }
-}
 
-html {
-  font-size: var(--font-size);
-} 
-
-h1 {
-  font-size: var(--text-7xl);
-  font-family: var(--font-serif);
-  font-weight: 300;
-}
-
-h2 {
-  font-size: var(--text-5xl);
-  font-family: var(--font-serif);
-  font-weight: 300;
-}
 
 /**
  * Base typography. This is not applied to elements which have an ancestor with a Tailwind text class.
@@ -479,6 +460,7 @@ h2 {
 @layer base {
   :where(:not(:has([class*=" text-"]), :not(:has([class^="text-"])))) {
     h1 {
+      font-family: var(--font-serif);
       font-size: var(--text-2xl);
       font-weight: var(--font-weight-medium);
       line-height: 1.5;
@@ -530,4 +512,16 @@ h2 {
 
 html {
   font-size: var(--font-size);
+}
+
+h1 {
+  font-size: var(--text-7xl);
+
+  font-weight: 300;
+}
+
+h2 {
+  font-size: var(--text-5xl);
+  font-family: var(--font-serif);
+  font-weight: 300;
 }

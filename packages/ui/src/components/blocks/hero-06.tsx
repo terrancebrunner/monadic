@@ -1,7 +1,7 @@
 import { Badge } from "@workspace/ui/components/ui/badge";
 import { Button } from "@workspace/ui/components/ui/button";
 import { ArrowUpRight, CirclePlay } from "lucide-react";
-import { BackgroundPattern } from "@workspace/ui/components/blocks/animated/background-pattern.js";
+import { BackgroundPattern } from "@workspace/ui/components/blocks/animated/background-pattern";
 /* import Link from "next/link"; */
 
 export default function Hero() {
