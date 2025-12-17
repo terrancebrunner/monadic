@@ -1,4 +1,3 @@
-import "@workspace/ui/styles/linkinbio.css";
 import { ThemeProvider } from "@workspace/ui/components/blocks/shared/theme-provider";
 // import { Providers } from "@workspace/ui/components/blocks/shared/providers";
 import Navbar from "@workspace/ui/components/gmh/blocks/gmh-navbar-02";

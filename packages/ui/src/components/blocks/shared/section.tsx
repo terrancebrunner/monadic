@@ -1,5 +1,5 @@
 import { cn } from "@workspace/ui/lib/utils";
-import { Container } from "./container";
+import { Container } from "@workspace/ui/components/blocks/shared/container";
 
 type SectionProps = {
   children: React.ReactNode;
