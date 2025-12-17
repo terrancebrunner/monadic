@@ -213,3 +213,30 @@ Build forward.
 Clone boldly.
 Diverge without guilt.
 
+---
+
+#### ⚜️ **Terrance Brunner** #dev/design lead 
+``` css
+(267)-259-5967
+terrancebrunner@gmail.com
+linkedin.com/en/terrancebrunner 
+github.com/terrancebrunner
+
+================================================================================
+
+ /\_/\XXXX |||XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+( o.o )XXX |||XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+ > - <XXXX(___)XXXXXXXXXXXXXXXXXXXXXXXXX            XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXX   XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX             XXXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXX  XXXXXXXXXXXXXXXX       XXXXXX              XXXXXXXXXXXXXXXXXXXXXXXXXXX
+XXXXXXXXX XXXXX _____                                     ____                  
+XXXXXXXXXX XXXX|_   _|__ _ __ _ __ __ _ _ __   ___ ___   | __ ) _ __ _   _ _ __ 
+XXXXXXXXXXX XXX  | |/ _ \ '__| '__/ _` | '_ \ / __/ _ \  |  _ \| '__| | | | '_ \
+XXXXXXXXXXXX XX  | |  __/ |  | | | (_| | | | | (_|  __/  | |_) | |  | |_| | | | 
+XXXXXXXXXXXXX X  |_|\___|_|  |_|  \__,_|_| |_|\___\___|  |____/|_|   \__,_|_| |_
+XXXXXXXXXXXXXXX                                       ________   XXXX       XXXX
+XXXXXXXXXXXX X                |\  ______\                         XXXX       XXX
+XXXXXXXXXX X X XXX            |  |         |                 |       XX       XX
+XXXXXXXXXXXXX                  \ |                           |      XXXXXXXXXXXX
+XXXXXXXXXXXXXXXXXX     </^\     \|______  _|                 |       XX       XX
+```

@@ -11,7 +11,7 @@ import {
 } from "@workspace/ui/components/ui/form";
 import { Input } from "@workspace/ui/components/ui/input";
 import { Separator } from "@workspace/ui/components/ui/separator";
-import { Logo } from "@workspace/ui/components/blocks/shared/logo-01.js";
+import { Logo } from "@workspace/ui/components/blocks/shared/logo-01";
 import { zodResolver } from "@hookform/resolvers/zod";
 import {
   FigmaIcon,
