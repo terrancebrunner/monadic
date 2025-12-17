@@ -5,15 +5,6 @@
 @import "tw-animate-css";
 @layer theme, base, components, utilities;
 
-@layer theme {
-  @theme default {
-    --font-sans:
-      ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
-      "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
-    --font-mono:
-      ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
-      "Courier New", monospace;
 
 @source "../../../apps/**/*.{ts,tsx}";
 @source "../../../components/**/*.{ts,tsx}";
@@ -22,11 +13,17 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
+
+  --font-sans:
+    ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-mono:
+    ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono",
+    "Courier New", monospace;
+
   --font-size: 16px;  
   --radius: 0.5rem;
-  --font-sans:  Avenir Next, ui-sans-serif, sans-serif, system-ui;
-  --font-serif: Baskervville, ui-serif, serif;
-  --font-mono: Roboto Mono, ui-monospace, monospace;
 
   --background: oklch(0.9856 0.0050 228.8167);
   --foreground: oklch(0.3393 0.0748 239.3669);
