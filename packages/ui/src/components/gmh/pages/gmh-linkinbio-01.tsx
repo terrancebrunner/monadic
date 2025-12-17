@@ -1,7 +1,7 @@
 "use client"
 
-import DarkLightAvatar from "@workspace/ui/components/blocks/shared/dark-light-avatar.js" ;
-import { ModeToggle } from "@workspace/ui/components/blocks/shared/mode-toggle.js";
+import DarkLightAvatar from "@workspace/ui/components/blocks/shared/dark-light-avatar" ;
+import { ModeToggle } from "@workspace/ui/components/blocks/shared/mode-toggle";
 import { useState } from "react"
 import { Button } from "@workspace/ui/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@workspace/ui/components/ui/card"

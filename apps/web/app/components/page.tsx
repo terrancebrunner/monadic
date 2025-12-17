@@ -1,5 +1,5 @@
 import { Button } from "@workspace/ui/components/ui/button";
-import { FancyButton } from "@workspace/ui/components/extended/fancy-button";
+import { FancyButton } from "@workspace/ui/components/blocks/extended/gmh-fancy-button";
 import { Card, CardAction, CardContent, CardDescription, CardHeader, CardTitle, CardFooter } from "@workspace/ui/components/ui/card";
 import { Separator } from "@workspace/ui/components/ui/separator";
 import { Input } from "@workspace/ui/components/ui/input"

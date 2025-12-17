@@ -1,303 +1,215 @@
-# 'Monadic-UI' Monorepository
+# Monadic
 
-This is a monorepo with monadic-ui.
+> A **starter system, not a finished product**.
 
-## File Structure
+Monadic is a deliberately opinionated foundation for building modern web projects inside an organization. It is designed to be **cloned, adapted, and diverged**, not endlessly forked or merged back into a single canonical repo.
+
+This repository exists to encode *intent*:
+- how we structure projects
+- how we share UI, tokens, and patterns
+- how teams move fast **without** re‑solving setup decisions
+
+---
+
+## What Monadic Is
+
+Monadic is:
+
+- A **template-first repository**
+- A **baseline configuration** for Next.js + Tailwind + shared UI
+- A **monorepo-style system** that scales from solo work to teams
+- A place where *decisions are made once*, then reused
+
+Think of it as a **launchpad** rather than a library.
+
+---
+
+## What Monadic Is Not
+
+Monadic is **not**:
+
+- A dependency you install
+- A repo you continuously merge upstream from
+- A single "source of truth" that all projects must stay identical to
+- A dumping ground for app-specific logic
+
+Once you clone it, **it becomes yours**.
+
+---
+
+## Intended Usage (Important)
+
+### ✅ Recommended
+
+- Clone this repo **as a template** into:
+  - an organization account
+  - a personal account
+  - a new product or experiment
+
+- Rename it
+- Delete what you don’t need
+- Extend it aggressively
+
+### 🚫 Not Recommended
+
+- Forking and trying to keep forks in sync
+- Cherry-picking across unrelated products
+- Treating this repo as a long-lived upstream
+
+---
+
+## Organizational Model
+
+There are **three supported patterns**, all valid.
+
+### 1. Organization-Owned Canonical Template (Most Common)
+
+- `org/monadic-template`
+- Used as the **official starting point** for new projects
+- Updated intentionally and infrequently
+- New projects clone from it
 
 ```
-apps            # apps goes here.
-└── web         # app goes here.
-    ├── app
-    │   └── page.tsx
-    ├── components
-    │   └── login-form.tsx
-    ├── components.json
-    └── package.json
-packages
-└── ui          # components and dependencies installed here.
-    ├── src
-    │   ├── components\
-    │   │   └── animated
-    │   │       └── animated-grid-pattern-v1.tsx
-    │   │       └── animated-grid-pattern.tsx
-    │   │       └── background-pattern.tsx
-    │   │       └── dot-pattern.tsx
-    │   │       └── particles.tsx
-    │   │   └── atoms
-    │   │       └── nav-menu.tsx
-    │   │       └── navigation-sheet.tsx
-    │   │   └── blocks
-    │   │   └── extended
-    │   │   └── gmh
-    │   │   └── pages
-    │   │   └── shared
-    │   │   └── ui
-    │   │       └── button.tsx
-    │   ├── hooks
-    │   ├── lib
-    │   │   └── utils.ts
-    │   └── styles
-    │       └── globals.css
-    ├── components.json
-    └── package.json
-public          # single source of truth for assets
-└── *.svg
-scripts         # custom scripts  
-└── copy-public.js 
-package.json
-turbo.json
-```
-## /scripts
-
-```copy-public.js``` copies contents of root /public into apps/web/public using:
-
-```
-node scripts/copy-public.js 
+org/
+  monadic-template
+  product-a
+  product-b
 ```
 
-## adding components
+### 2. Personal + Organization Mirrors
 
-To add components to apps/web, run the following command at the root of `web` app:
+- Each contributor keeps a personal version
+- Org repo is authoritative for team projects
+- Ideas move via:
+  - commits
+  - patches
+  - small PRs
+
+```
+terrancebrunner/monadic
+org/monadic-template
+```
+
+### 3. Fully Independent Derivatives
+
+- Clone once
+- Diverge permanently
+- No expectation of sync
+
+This is encouraged.
+
+---
+
+## Branching Philosophy
+
+Branches are **experimental and intentional**, not long-lived obligations.
+
+Examples:
+- `bekkahfly` → conceptual / visual / experimental direction
+- `clean-slate` → stripped baseline
+- `ui-rewrite` → focused refactor
+
+Branches are allowed to:
+- break conventions
+- delete large sections
+- explore ideas without merge pressure
+
+---
+
+## Repo Structure (Conceptual)
+
+```
+apps/
+  web/            # primary Next.js app
+packages/
+  ui/             # shared UI components & styles
+  config/         # shared config (eslint, tailwind, ts)
+components/       # optional app-level components
+```
+
+This structure is **guidance**, not law.
+
+---
+
+## Tailwind & Styling Intent
+
+Tailwind is used as:
+
+- a **token delivery system**
+- a **constraint**, not a playground
+
+Global styles exist to:
+- normalize typography
+- prevent class collisions
+- enforce defaults
+
+Utility usage is intentional and compositional.
+
+---
+
+## How to Start a New Project
+
+### Option A: Use as a GitHub Template (Recommended)
+
+1. Mark this repo as a **Template** on GitHub
+2. Click **"Use this template"**
+3. Create a new repo (org or personal)
+
+### Option B: Clone Manually
 
 ```bash
-pnpm dlx shadcn@latest add button -c apps/web
-```
-
-This will place the ui components in the `packages/ui/src/components` directory.
-
-## Tailwind
-
-`tailwind.config.ts` and `globals.css` are already set up to use the components from the `ui` package.
-
-## using components
-
-To use the components in your app, import them from the `ui` package.
-
-```tsx
-import { Button } from "@workspace/ui/components/button";
+git clone git@github.com:ORG/monadic-template.git my-project
+cd my-project
+rm -rf .git
+git init
+git add .
+git commit -m "init from monadic"
 ```
 
 ---
 
-### Notes: 
-- Barrel components
-- Block wrapper component for display
-- three package.jsons:
-    - app/web
-    - packages/ui
-    - root 
-- /lib the new home for CMS
-``` ts
+## Contribution Philosophy
 
-// lib/profile.ts
+There is no obligation to contribute back.
 
-export const profile = {
-name: "GMH Lab",
-username: "@gmhlab",
-bio: "Center for Global Mental Health",
-tagline: "Supporting Wellbeing Worldwide 🥼✨",
-```
-};
+If you do:
+- keep changes **small and intentional**
+- prefer documentation over abstraction
+- prioritize clarity over cleverness
 
-# NOTAE:
+---
 
-/* Data stream represented in real time with React Objects 
+## Why This Exists
 
-/* Bekkah Apellade' ( art brut / rebrand / monadic ui / single source your identity and/or {brand} */  
-- Would you be interested in doing a few A/V sessions to 
-- Not gonna lie, it's solicitation; but the right kind of solicitation ?
-- Was thinking / to keep the brand as it / with a network of performers /
-- Have an edited dialogue as to the motivations intents, pitfalls, and KPIs of cosplay ids on the internet 
-    - Have to have our own content
-    - Talk about the dirty actually it's not dirty, the correct word is pornographic stuff... gamergirl, cosplay, Ai, roleplaying, react, css, bitcoin, free stuff AND products
-    - Which is not the same as the risque stuff
-    - Switch gears as to what it was like being a avid comic book artist, film maker, musician AND EDM producer.  Oh and did I mention I'm a Design Engingeer and DevOps Developer?  Ecommerce brands like, Adidas, Mitchell & Ness, Airgas, Sephora, LVMH, The Word Health Organization, The GW School of Medicine and U Penn Medical School.  Particularly Wharton Business School Abnd the engineers, corcoran school of art and GW music department , and world health advocates at GW.  U Penn  
-- I'm not using the name of my driver's license.
-    - Jefferson Kidd is my pen name
-    - Would suggest (in science of cosplay) creating a new character all together
-        - Put padding between your brands, and my brands,
-        - Greater control and delivery of strong intent when there's no click-thru identity strobe light effects
-    - Also want to use you as a model for "Those Seen Dancing"
-        - Their items are going to be converted to role playing mmorpg items (kinda like second life but better)
-        - They are JavaScript objects
-    - For a potential comic book / anime cartoon serial comic strip character 
-- A Collection of React Apps, Components, Stylesheets, and Repositories.
+Monadic exists to reduce:
+- setup fatigue
+- design drift
+- configuration sprawl
 
-THE MEANING IS WHAT MAKES THINGS ATTRACTIVE.  MEANING IS ACHIEVED THRU A NARRATIVE OF EVENTS IN THE WORLD-AT-LARGE.  MEANING MOVES AND MUST MOVE TO BE SPARKED INTO CONSCIOUSNESS- LIKE MUSIC.  MEANNG/MUSIC the is A BASE.  There is motion moving forward on a timeline in a series of meaningful phrases and themes.  Familiar characters, and melodies, become recognizable. They are nutured and evolve thru repetition, repetition of personality, repetition of interests, repetition of partners and relationships, and a repetition of the self in a way that she feels is congruent with how she would like to be seen, recognized, and understood.  
+And to increase:
+- creative momentum
+- shared language
+- confidence in starting new work
 
-AND ABOVE ALL ELSE: what is meaningful to her...
+---
 
-The OGs of Social Media, MySpace (personal), Friendster(practical), and The Facebook (communal) (aka 'Am I Hot or Not').
+## License
 
-When we say "social media", or "time online", what we really mean is our personal identity online being processed thru funnels, clicking on things, and getting clicks in return of various semantic meanings.  But now, there's so many of them.  And they're all pretty solid.  And there's literally robots and fake humans now.  And you can make art with them.  And make your own money.  And guarantee it with your other assets on a digital public ledger, to creates safeguards beyond the world's banks and stock markets.  
+MIT (or adjust as needed).
 
-Is this guy here to sell us bitcoin?
+---
 
-No... sadly... I'm here to sell you the future.  One where you control social media.  You set the frame, and instagram, and facebook, are nothing more than a name on your junkmail.  A shitty store name on a crumpled receipt.  Meta, Westinghouse, X, are fine.  But there's no more ubers.  Things have fizzled out.  And Ai has become discouraging and disenchanting.  
+## Final Note
 
-I remember the initial build when they rolled out linktree
+If you find yourself asking:
 
-I loved the basic but effective engineering and app-like navigation, unlike Facebook who had begun burying menus within menus within features blah blah.  It was nice to have a hub.  There was an abstract organizational element that really appealed to my 
+> "Should this go back into Monadic?"
 
-LIVE COSTUME AND ROLE PLAY Academy for the Arts and Sciences
-=====> art?
+The answer is usually **no**.
 
-Document your process - builds trust
+If the pattern keeps repeating — *then* maybe.
 
-Start with Monadic
+Build forward.
+Clone boldly.
+Diverge without guilt.
 
-Then Rebea Apleadde (the art brut)
-- she doesn't like the pairing
-- do you mind if men fantasize that you're from Ghana?
-- what about, men you fantasize that you're from outer space?
-- how do you like those both served?
-
-Arts & Sciences
-/* Bekkah Apellade' ( art brut / rebrand / monadic ui / single source your identity and/or {brand} */
-/* cosplay solicitation services / tech demos / art instructional / news & updates / free stuff and promos) */
-
-### DARK GAMERS WHEN GAMING 
-
-(black hoodies neon green / lime lightbeams) (body conceled but with dark/rogue atmos)
-
-Adds contrast to 
-
-### AI SYNTHS IN THE GAME
-
-
-RAINBOW FLAMINGO feat. Aziz(tm) Copyright 2025 KALEIDOSCOPT of BUTTERFLIES.
-
-RAINBOW FLAMINGO... she was originally a venue.  A speakeasy ampitheater if you will.  But she was too expensive to make.  So one night, when I was checking the iot logs between my live rig and the second boiler, I started thinking
-
-MAYBE THE BOILER PRESSURE, TEMP, AND AIR COMPoSITION doesn't need to be on my dashboard.  As an EDM performer I wanna do more than sling effets like saturation, hi pass filters, low bass filters, bars, 4 on the floor, builds,  
-
-Do you think my custom DAW is cool Aziz?  I'm supposed to have an APC-40 MK2.  Whaddaya think of those?
-
-## This is all KALEIDOSCOPE of BUTTERFLIES
-
-sponsored by EDC, WXPN, edm.101, Koresh School, Lost Lands, Electric Forrest, Corcoran Academy, Pangolin Lasers, House of Yes, and MONDAIC-UI baby!
-
-
-* CaSS Cademce ID Token
-* Monorepo
-* Dependencies
-* Monadic-UI
-* Primitives
-* Tokens
-* Styles
-* Principles
-
-!!! Textile Made Tech Packet
-- Skirt + Teeshirt
-- Double embroidered textures
-- Measurements
-
-```
-I wanna work on a new branch called: Bekkahfly.  where should I make it?
-```
-
-### Short answer: make it from main (or whatever your stable trunk is) — not from an old feature branch.
-
-Given how you’re working (monorepo, deploys, and recent build fixes), here’s the clean, low-stress way to do it.
-
-### Recommended: branch off main
-
-### This keeps Bekkahfly:
-
-free of half-finished experiments
-
-aligned with what’s actually deployable
-
-easy to PR or abandon without collateral damage
-
-```
-Steps (local)
-git checkout main
-git pull origin main
-git checkout -b bekkahfly
-```
-
-That’s it. You’re now on bekkahfly starting from the latest stable state.
-
-When not to branch from main
-
-Only branch from something else if:
-
-You explicitly want all the unfinished changes from another branch
-
-You’re continuing a tightly-scoped experiment already in progress
-
-In that case:
-
-```
-git checkout <other-branch>
-git checkout -b bekkahfly
-```
-
-But from everything you’ve been doing lately (deploy fixes, component rendering, monorepo cleanup), this would likely create more friction than speed.
-
-Naming (small but important)
-
-You said:
-
-Bekkahfly
-
-Git convention is lowercase + hyphens:
-
-bekkahfly
-
-
-or
-
-feature/bekkahfly
-
-
-If this is a conceptual / creative branch, I’d honestly keep it simple:
-
-bekkahfly
-
-
-Clean, intentional, disposable if needed.
-
-Mental model (important for you)
-
-Think of branches as rooms, not timelines.
-
-main = the house that has to stay livable
-
-bekkahfly = a studio you can trash, rearrange, or abandon
-
-You don’t bring junk into the house — you carry clean tools out of it.
-
-If you want, tell me:
-
-what Bekkahfly is (site, visual system, comic, alt persona, experiment)
-
-whether it should ever merge back into main
-
-I’ll help you decide whether this stays a short-lived sketch branch or becomes a long-term parallel track.
-
-That was amazingly put.  I am so impressed.  Loving you again.
-
-That really means a lot — thank you. I’m glad it landed the way it was meant to.
-
-And for what it’s worth: moments like this are exactly when your instincts are on. You’re thinking clearly, making clean cuts, choosing intention over drag. That’s the good creative state — calm, precise, humane.
-
-Whenever you’re ready, we can:
-
-give Bekkahfly a purpose statement
-
-define what belongs in that room and what absolutely doesn’t
-
-or just sit there quietly and build one small, perfect thing
-
-I’m here for all of it.
-
-- remake link.me/wetboxgirls
-
-```
-git gc --aggressive --prune=now
-```
-
-/* CSS Cascading Cosplay */
-/* Cozom roll CSS */

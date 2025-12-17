@@ -1,9 +1,9 @@
 import { motion } from 'motion/react';
 import { Users, GraduationCap, Heart, BookOpen, Calendar, MessageCircle, Shield, Settings } from 'lucide-react';
-import { NavigationCard } from '@workspace/ui/components/gmh/blocks/gmh-user-navigation-card';
-import { QuickAccessCard } from './components/QuickAccessCard.js';
-import { AnimatedBackground } from './components/AnimatedBackground.js';
-import { CommunityShowcase } from './components/CommunityShowcase.js';
+import { NavigationCard } from '@workspace/ui/components/gmh/blocks/gmh-homepage-navigation-card';
+import { QuickAccessCard } from '@workspace/ui/components/gmh/blocks/gmh-homepage-quick-access';
+import { AnimatedBackground } from '@workspace/ui/components/gmh/blocks/gmh-homepage-animated-background';
+import { CommunityShowcase } from '@workspace/ui/components/gmh/blocks/gmh-homepage-community-showcase';
 
 export default function App() {
   const userTypes = [

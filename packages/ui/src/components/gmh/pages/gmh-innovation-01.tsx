@@ -1,10 +1,10 @@
 import { InnovationHeader } from '@workspace/ui/components/gmh/blocks/gmh-innovation-header';
-import { WhatIsItSection } from '@workspace/ui/components/gmh/blocks/gmh-whatisit-section';
-import { HowToUseSection } from '@workspace/ui/components/gmh/blocks/gmh-howtouseit-section';
-import { TestingSection } from '@workspace/ui/components/gmh/blocks/gmh-testing-section';
-import { UserStorySection } from '@workspace/ui/components/gmh/blocks/gmh-userstory-section';
-import { GetItSection } from '@workspace/ui/components/gmh/blocks/gmh-getit-section';
-import { NavigationFooter } from '@workspace/ui/components/gmh/blocks/gmh-navigation-footer';
+import { WhatIsItSection } from '@workspace/ui/components/gmh/blocks/gmh-innovation-whatisit';
+import { HowToUseSection } from '@workspace/ui/components/gmh/blocks/gmh-innovation-useit';
+import { TestingSection } from '@workspace/ui/components/gmh/blocks/gmh-innovation-testit';
+import { UserStorySection } from '@workspace/ui/components/gmh/blocks/gmh-innovation-userstory';
+import { GetItSection } from '@workspace/ui/components/gmh/blocks/gmh-innovation-getit';
+import { NavigationFooter } from '@workspace/ui/components/gmh/blocks/gmh-innovation-nav-footer';
 import { Download } from 'lucide-react';
 
 export default function App() {
