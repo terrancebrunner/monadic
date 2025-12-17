@@ -1,10 +1,8 @@
-/* CSS Cascading Cosplay */
-/* Cozom roll CSS */
-
 @import "tailwindcss";
 @import "tw-animate-css";
 @layer theme, base, components, utilities;
 
+<<<<<<< HEAD
 @layer theme {
   @theme default {
     --font-sans:
@@ -19,6 +17,8 @@
 @source "../../../components/**/*.{ts,tsx}";
 @source "../**/*.{ts,tsx}";
 
+=======
+>>>>>>> 5105a49 (wip: prep for bekkahfly)
 @custom-variant dark (&:is(.dark *));
 
 :root {
