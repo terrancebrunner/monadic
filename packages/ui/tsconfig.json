@@ -9,7 +9,11 @@
     "declarationMap": true,
     "outDir": "dist",
     "rootDir": "src",
-    "incremental": true
-  },
+    "incremental": true,
+    "baseUrl": "src",
+    "paths": {
+      "@ui/*": ["*"],
+    }
+  },  
   "include": ["src"]
 }
