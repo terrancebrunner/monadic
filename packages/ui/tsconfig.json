@@ -1,13 +1,15 @@
 {
   "extends": "@workspace/typescript-config/react-library.json",
   "compilerOptions": {
-    "esModuleInterop": true,
-    "allowSyntheticDefaultImports": true,
-    "baseUrl": ".",
-    "paths": {
-      "@workspace/ui/*": ["./src/*"]
-    }
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "jsx": "react-jsx",
+    "composite": true,
+    "declaration": true,
+    "declarationMap": true,
+    "outDir": "dist",
+    "rootDir": "src",
+    "incremental": true
   },
-  "include": ["."],
-  "exclude": ["node_modules", "dist"]
+  "include": ["src"]
 }

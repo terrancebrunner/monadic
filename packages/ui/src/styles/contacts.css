@@ -1,4 +1,4 @@
-/* Focus */
+/* ----------------- Focus ----------------- */
 .ui-focus {
   outline: none;
 }
@@ -8,7 +8,7 @@
   outline-offset: 2px;
 }
 
-/* Motion */
+/* ----------------- Motion ----------------- */
 @media (prefers-reduced-motion: no-preference) {
   .ui-motion {
     transition:
@@ -18,3 +18,16 @@
       transform 120ms ease;
   }
 }
+
+/* ----------------- Surface ----------------- */
+.ui-surface {
+  background-color: hsl(var(--background)); /* main background */
+  color: hsl(var(--foreground));           /* main text color */
+  border-radius: var(--radius);             /* consistent rounding */
+  box-shadow: var(--shadow-sm);            /* subtle elevation */
+  border: 1px solid hsl(var(--border));    /* optional border for surfaces */
+}
+
+.ui-surface-sm { box-shadow: var(--shadow-sm); }
+.ui-surface-md { box-shadow: var(--shadow-md); }
+.ui-surface-lg { box-shadow: var(--shadow-lg); }
