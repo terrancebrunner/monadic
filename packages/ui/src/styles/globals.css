@@ -1,9 +1,8 @@
 @import "tailwindcss";
 @import "tw-animate-css";
-
 @layer theme, base, components, utilities;
-
 @custom-variant dark (&:is(.dark *));
+
 
 :root {
 

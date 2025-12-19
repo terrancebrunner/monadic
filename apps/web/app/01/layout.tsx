@@ -1,5 +1,4 @@
 import { ThemeProvider } from "@workspace/ui/components/blocks/shared/theme-provider";
-import "@workspace/ui/styles/gmh.css";
 
 
 export default function RootLayout({

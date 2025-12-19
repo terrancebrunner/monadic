@@ -1,7 +1,6 @@
 "use client";
 
-import "@workspace/ui/styles/linkinbio.css"
-import DarkLightAvatar from "@workspace/ui/components/blocks/shared/dark-light-avatar.js"
+import DarkLightAvatar from "@workspace/ui/components/blocks/shared/dark-light-avatar"
 
 import { useState } from "react"
 import { Button } from "@workspace/ui/components/ui/button"
