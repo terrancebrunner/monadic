@@ -1,6 +1,7 @@
-import { Button } from "../primitives/button"
+import { Button } from "../primitives/button";
+import "../styles/monadic.css";
 
-export default function DemoButtonPage() {
+export default function Page() {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center gap-6 p-8 bg-gray-50">
       <h1 className="text-2xl font-bold">Button Demo</h1>

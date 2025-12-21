@@ -1,5 +1,7 @@
-import { LinkInBio } from "@workspace/ui/components/gmh/pages/gmh-linkinbio-01"
+"use client"
+
+import { Button } from "@workspace/ui"
 
 export default function Page() {
-  return <LinkInBio />
+  return <Button />;
 }

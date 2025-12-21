@@ -1,5 +1,4 @@
 "use client";
-
 import DarkLightAvatar from "@workspace/ui/components/blocks/shared/dark-light-avatar"
 
 import { useState } from "react"
@@ -184,6 +183,7 @@ export function LinkInBio() {
             >
               <Share2 className="h-5 w-5" />
             </Button>
+
           </div>
 
           {/* Analytics Card */}
@@ -256,7 +256,7 @@ export function LinkInBio() {
               </Card>
             ))}
           </div>
-
+          <Button />
           {/* Footer */}
           <div className="flex flex-col mt-12 justify-center items-center text-center">
             <p className="text-center text-foreground text-slate-500 text-sm dark:text-slate-400">

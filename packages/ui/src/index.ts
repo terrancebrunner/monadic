@@ -1,2 +1,3 @@
 import "./styles/contracts.css";
-export * from "./primitives";
+export * from "./components/primitives";
+export * from "./components/pages"
